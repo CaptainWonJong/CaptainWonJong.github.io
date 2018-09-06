@@ -50,6 +50,105 @@
     </entry>
     
     <entry>
+        <title><![CDATA[Dynamic View Size with Glide]]></title>
+        <url>/2018-09-06/Dynamic-Image-Size/</url>
+        <content type="html"><![CDATA[<h2 id="glide를-이용한-동적-뷰-크기-조절">Glide를 이용한 동적 뷰 크기 조절</h2>
+
+<p>이미지뷰의 경우 아래와 같이 adjustViewBounds 옵션만 주면 자동으로 width에 맞춰 비율을 유지한채 height값이 변하게 된다.</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ImageView</span>
+    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:adjustViewBounds=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/ImageView&gt;</span>
+</code></pre></div></div>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Glide</span><span class="o">.</span><span class="na">with</span><span class="o">(</span><span class="n">mContext</span><span class="o">).</span><span class="na">load</span><span class="o">(</span><span class="n">IMAGE</span> <span class="n">URL</span><span class="o">).</span><span class="na">into</span><span class="o">(</span><span class="n">IMAGEVIEW</span> <span class="n">ID</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p>근데 ViewPager나 기타등등의 View들은 자동으로 안바뀌어서 이번에 프로젝트를 하며 하나 만들어놓았다.</p>
+
+<ol>
+  <li>스레드를 이용하여 서버에 있는 이미지 url에 접근한다. (여기서는 Glide가 알아서 해줌)</li>
+  <li>이미지의 높이(px), 너비(px)값을 변수로 가지고 있는다.</li>
+  <li>layoutParams를 이용하여 View의 크기를 강제적으로 바꿔준다
+ <strong>이 때, ViewTreeObserver의 OnGlobalLayoutListener를 사용</strong></li>
+  <li>aHeight : aWidth = bHeight : bWidth 일 때, 
+ bHeight = (aHeight * bWidth) / aWidth 인 것을 적용한다.</li>
+</ol>
+
+<h4 id="xml">xml</h4>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- layout to apply margin --&gt;</span>
+<span class="nt">&lt;LinearLayout</span>
+    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_marginLeft=</span><span class="s">"10dp"</span>
+    <span class="na">android:layout_marginRight=</span><span class="s">"10dp"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- dynamic size view --&gt;</span>
+    <span class="nt">&lt;include</span>
+        <span class="na">android:id=</span><span class="s">"@+id/ic_main_dynamic_layout"</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+        <span class="na">layout=</span><span class="s">"@layout/include_main_marketing_banner"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/include&gt;</span>
+<span class="nt">&lt;/LinearLayout&gt;</span>
+</code></pre></div></div>
+
+<h4 id="java">java</h4>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+* 이미지 사이즈에 맞춰 View의 높이를 이미지 크기에 맞게 자동으로 변경
+* (View, LinearLayout 적용가능)
+* @param context
+* @param imageUrl
+* @param view
+*/</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">setAutoSizeView</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">,</span> <span class="n">String</span> <span class="n">imageUrl</span><span class="o">,</span> <span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="kd">final</span> <span class="n">View</span> <span class="n">changeView</span> <span class="o">=</span> <span class="n">view</span><span class="o">;</span>
+
+    <span class="c1">// image url에 연결해서 이미지의 width, height를 받아온다.</span>
+    <span class="n">Glide</span><span class="o">.</span><span class="na">with</span><span class="o">(</span><span class="n">context</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">load</span><span class="o">(</span><span class="n">imageUrl</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">override</span><span class="o">(</span><span class="n">Target</span><span class="o">.</span><span class="na">SIZE_ORIGINAL</span><span class="o">,</span> <span class="n">Target</span><span class="o">.</span><span class="na">SIZE_ORIGINAL</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">into</span><span class="o">(</span><span class="k">new</span> <span class="n">SimpleTarget</span><span class="o">&lt;</span><span class="n">GlideDrawable</span><span class="o">&gt;()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+                <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onResourceReady</span><span class="o">(</span><span class="n">GlideDrawable</span> <span class="n">glideDrawable</span><span class="o">,</span> <span class="n">GlideAnimation</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">GlideDrawable</span><span class="o">&gt;</span> <span class="n">glideAnimation</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="kd">final</span> <span class="kt">int</span> <span class="n">imageHeight</span> <span class="o">=</span> <span class="n">glideDrawable</span><span class="o">.</span><span class="na">getIntrinsicHeight</span><span class="o">();</span>
+                    <span class="kd">final</span> <span class="kt">int</span> <span class="n">imageWidth</span> <span class="o">=</span> <span class="n">glideDrawable</span><span class="o">.</span><span class="na">getIntrinsicWidth</span><span class="o">();</span>
+
+                    <span class="c1">// 파라미터로 받아온 width, height를 view에 적용한다.</span>
+                    <span class="n">ViewTreeObserver</span> <span class="n">vto</span> <span class="o">=</span> <span class="n">changeView</span><span class="o">.</span><span class="na">getViewTreeObserver</span><span class="o">();</span>
+                    <span class="n">vto</span><span class="o">.</span><span class="na">addOnGlobalLayoutListener</span><span class="o">(</span><span class="k">new</span> <span class="n">ViewTreeObserver</span><span class="o">.</span><span class="na">OnGlobalLayoutListener</span><span class="o">()</span> <span class="o">{</span>
+                        <span class="nd">@Override</span>
+                        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onGlobalLayout</span><span class="o">()</span> <span class="o">{</span>
+                            <span class="n">changeView</span><span class="o">.</span><span class="na">getViewTreeObserver</span><span class="o">().</span><span class="na">removeGlobalOnLayoutListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+                            <span class="kt">int</span> <span class="n">width</span> <span class="o">=</span> <span class="n">changeView</span><span class="o">.</span><span class="na">getMeasuredWidth</span><span class="o">();</span>
+                            <span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="o">(</span><span class="n">width</span> <span class="o">*</span> <span class="n">imageHeight</span><span class="o">)/</span><span class="n">imageWidth</span><span class="o">;</span>
+
+                            <span class="n">changeView</span><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="k">new</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">(</span><span class="n">width</span><span class="o">,</span> <span class="n">height</span><span class="o">));</span>
+                        <span class="o">}</span>
+                    <span class="o">});</span>
+                <span class="o">}</span>
+            <span class="o">});</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+]]></content>
+        <categories>
+            
+        </categories>
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Glide </tag>
+            
+        </tags>
+        <tags></tags>
+    </entry>
+    
+    <entry>
         <title><![CDATA[Android Coding Rule]]></title>
         <url>/2018-09-06/Android-Coding-Rule/</url>
         <content type="html"><![CDATA[<h1 id="안드로이드-개발자를-위한-코드-스타일-가이드라인">안드로이드 개발자를 위한 코드 스타일 가이드라인</h1>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://CaptainWonJong.github.io/sitemap.xml
