@@ -6,6 +6,45 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>My Android Studio Plugin</title>
+        <description>&lt;h2 id=&quot;안드로이드-스튜디오-플러그인&quot;&gt;안드로이드 스튜디오 플러그인&lt;/h2&gt;
+
+&lt;p&gt;–&amp;gt; &lt;strong&gt;설치방법&lt;/strong&gt; : File &amp;gt; Settings… &amp;gt; IDE Settings &amp;gt; Plugins &amp;gt; Browse repositories 에서 해당 플러그인 검색&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. CodeGlance
+ : 우측에 코드의 미니맵을 볼 수 있다. (SublimeText 기능와 동일)  
+
+2. wifi adb ultimate
+ : USB를 연결하지 않고도, 같은 네트워크를 사용하는 안드로이드 기기에 ADB로 연결을 지원  
+
+3. Parcelable code generator
+ : 클래스의 변수를 기준으로 Parcelable 인터페이스 구현 코드 생성  
+
+4. Android Material Design Icon Generator Plugin
+ : 머티리얼 디자인 아이콘을 쉽게 사용할 수 있음  
+
+5. ColorManager
+ : 안드로이드 스튜디오의 리소스 파일에서 색을 구체적으로 확인  
+
+6. Android API Level Plugin
+ : SDK 버전 옆에 안드로이드 OS 버전을 보여주는 플러그인  
+
+7. MVP generator
+ : MVP 패턴을 자동으로 만들어줌 (Dagger, RxJava)와도 유용하게 사용가능  
+
+8. DTOnator
+ : 모델을 만들 떄 POJO를 탑재해줌  
+
+9. .gitignore
+ : .gitignore 자동 생성(계속 변하는 파일들 무시하는 코드 자동 생성)  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 06 Sep 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-09-06/My-Plugin/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-09-06/My-Plugin/</guid>
+      </item>
+    
+      <item>
         <title>Android Coding Rule</title>
         <description>&lt;h1 id=&quot;안드로이드-개발자를-위한-코드-스타일-가이드라인&quot;&gt;안드로이드 개발자를 위한 코드 스타일 가이드라인&lt;/h1&gt;
 
