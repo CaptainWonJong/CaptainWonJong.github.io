@@ -43,7 +43,7 @@ FA+9qCX9VSu
 implementation 'com.google.android.gms:play-services:+'
 ```
 <br>
-### 2.. 메인이든 어디든 원하는 액티비티에 아래와 같이 SmsRtriever 클라이언트를 선언/실행 해준다.  
+### 2.. 메인이든 어디든 원하는 액티비티에 아래와 같이 SmsRetriever 클라이언트를 선언/실행 해준다.  
 (registerReceiver와 unregisterReceiver는 원하는 곳에 해줘도 된다.   
 otp 버튼을 누를 때 해줘도 되고, onCreate, onResume, onDestroy등 앱 특성에 맞에 개발자 마음대로..)
 
@@ -226,9 +226,13 @@ private static String getHash(String packageName, String signature) {
 }
 ```
 <br><br>
-관련 소스코드 주소 : 올릴예정
-
-
+관련 소스코드 주소 : (Kotlin은 이미 좋은 소스코드가 있어 다른 github 주소 추천드립니다.)  
+java : <https://github.com/CaptainWonJong/SMS_Retriever_API>  
+kotlin : <https://github.com/chintandesai49/SMSRetrieverAPIDemo>   
+<br>
+참고사이트 :   
+<https://developers.google.com/identity/sms-retriever/>  
+<https://android.jlelse.eu/googles-sms-retriever-api-6540eb3c8e9c>  
 
 
 

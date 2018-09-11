@@ -41,7 +41,7 @@ FA+9qCX9VSu
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;implementation 'com.google.android.gms:play-services:+'
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-메인이든-어디든-원하는-액티비티에-아래와-같이-smsrtriever-클라이언트를-선언실행-해준다&quot;&gt;2.. 메인이든 어디든 원하는 액티비티에 아래와 같이 SmsRtriever 클라이언트를 선언/실행 해준다.&lt;/h3&gt;
+&lt;h3 id=&quot;2-메인이든-어디든-원하는-액티비티에-아래와-같이-smsretriever-클라이언트를-선언실행-해준다&quot;&gt;2.. 메인이든 어디든 원하는 액티비티에 아래와 같이 SmsRetriever 클라이언트를 선언/실행 해준다.&lt;/h3&gt;
 &lt;p&gt;(registerReceiver와 unregisterReceiver는 원하는 곳에 해줘도 된다. &lt;br /&gt;
 otp 버튼을 누를 때 해줘도 되고, onCreate, onResume, onDestroy등 앱 특성에 맞에 개발자 마음대로..)&lt;/p&gt;
 
@@ -217,7 +217,13 @@ FA+9qCX9VSu
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-관련 소스코드 주소 : 올릴예정&lt;/p&gt;
+관련 소스코드 주소 : (Kotlin은 이미 좋은 소스코드가 있어 다른 github 주소 추천드립니다.)&lt;br /&gt;
+java : &lt;a href=&quot;https://github.com/CaptainWonJong/SMS_Retriever_API&quot;&gt;https://github.com/CaptainWonJong/SMS_Retriever_API&lt;/a&gt;&lt;br /&gt;
+kotlin : &lt;a href=&quot;https://github.com/chintandesai49/SMSRetrieverAPIDemo&quot;&gt;https://github.com/chintandesai49/SMSRetrieverAPIDemo&lt;/a&gt; &lt;br /&gt;
+&lt;br /&gt;
+참고사이트 :&lt;br /&gt;
+&lt;a href=&quot;https://developers.google.com/identity/sms-retriever/&quot;&gt;https://developers.google.com/identity/sms-retriever/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://android.jlelse.eu/googles-sms-retriever-api-6540eb3c8e9c&quot;&gt;https://android.jlelse.eu/googles-sms-retriever-api-6540eb3c8e9c&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 10 Sep 2018 00:00:00 +0900</pubDate>
