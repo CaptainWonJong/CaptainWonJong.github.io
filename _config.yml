@@ -75,5 +75,3 @@ gems:
   - jekyll-admin
 
 exclude:            [vendor]
-
-sitemap:            sitemap
