@@ -18,7 +18,11 @@ SMS/다이얼러 기본 앱, 어시스턴스 앱, 백업 앱, 계정 관리, 고
 
 그리하여 SMS 권한을 사용하지 않고 OTP 자동입력을 할 수 있도록 [SMS Retriever API](https://developers.google.com/identity/sms-retriever/), [SMS_Manager API](https://developer.android.com/reference/android/telephony/SmsManager), [SMS Intent](https://developer.android.com/guide/components/intents-common#SearchOnApp) 로 대체하여 사용해야 한다.  
   
-오늘은 첫 번째로 **SMS Retriever API**를 사용하여 SMS가 왔을 때 인증번호를 자동으로 입력하는 방법을 알아보자.  <br><br>
+오늘은 첫 번째로 **SMS Retriever API**를 사용하여 SMS가 왔을 때 인증번호를 자동으로 입력하는 방법을 알아보자. 
+  
+  ![SMS_Retriever_API.png](https://captainwonjong.github.io/images/img_sms_retriever_api_flow.png)
+  <small> (SMS Retriever API의 구조) </small><br><br>
+  
   
 일단 이 API를 사용하려면 아래와 같은 규칙을 **반드시** 숙지하고 따라야 한다.
 1. Be no longer than 140 bytes 
