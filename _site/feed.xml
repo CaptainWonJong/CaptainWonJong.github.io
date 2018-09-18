@@ -7,7 +7,9 @@
     
       <item>
         <title>Automatic SMS verification without using SMS permission</title>
-        <description>&lt;h2 id=&quot;1-sms-manager---createappspecificsmstoken&quot;&gt;1) SMS Manager - createAppSpecificSmsToken&lt;/h2&gt;
+        <description>&lt;h1 id=&quot;소스코드-및-블로그-내용-수정중입니다&quot;&gt;소스코드 및 블로그 내용 수정중입니다.&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-sms-manager---createappspecificsmstoken&quot;&gt;1) SMS Manager - createAppSpecificSmsToken&lt;/h2&gt;
 
 &lt;p&gt;오늘은 두 번째로 &lt;strong&gt;SMS Manager&lt;/strong&gt;를 사용하여 SMS가 왔을 때 인증번호를 자동으로 입력하는 방법을 알아보자. 
 SMS Retriever API를 사용하여 SMS 권한 없이 OTP 자동입력을 하는 방법은 &lt;a href=&quot;https://captainwonjong.github.io/2018-09-10/SMS-Retriever-API/&quot;&gt;여기&lt;/a&gt;를 확인하자.&lt;/p&gt;
