@@ -2,7 +2,7 @@
 layout: post
 title: "Automatic SMS verification without using SMS permission"
 description: "SMS 권한을 선언하지 않고 SMS 인증(OTP 인증)을 하는 방법 (2)"
-date: 2018-09-17
+date: 2018-09-21
 tags: [Android, SMS, SMS Manager, createAppSpecificSmsToken, Permission]
 comments: 정
 share: false
