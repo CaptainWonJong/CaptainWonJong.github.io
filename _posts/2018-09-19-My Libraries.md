@@ -72,14 +72,14 @@ share: true
 7) [AndroidAppShortcuts](https://github.com/michelelacorte/AndroidAppShortcuts)  
 
 #### - Calendar
-1) [CalendarPicker](https://github.com/maxyou/CalendarPicker)  
-2) [excelPanel](https://github.com/zhouchaoyuan/excelPanel)
+1) [CalendarPicker](https://github.com/maxyou/CalendarPicker)   
+2) [excelPanel](https://github.com/zhouchaoyuan/excelPanel)  
 3) [Horizontal Calendar](https://github.com/Mulham-Raee/Horizontal-Calendar)
 
 #### - Toast
-1) [FancyToast-Android](https://github.com/Shashank02051997/FancyToast-Android)  
-2) [Toasty](https://github.com/GrenderG/Toasty)
-3) [StyleableToast](https://github.com/Muddz/StyleableToast)
+1) [FancyToast-Android](https://github.com/Shashank02051997/FancyToast-Android)    
+2) [Toasty](https://github.com/GrenderG/Toasty)  
+3) [StyleableToast](https://github.com/Muddz/StyleableToast)  
 
 #### - Graph
 1) [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  

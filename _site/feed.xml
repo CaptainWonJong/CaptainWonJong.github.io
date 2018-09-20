@@ -6,6 +6,58 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How to draw a UML using Plugin in Android studio</title>
+        <description>&lt;h1 id=&quot;simple-uml-plugin&quot;&gt;Simple UML Plugin&lt;/h1&gt;
+&lt;h3 id=&quot;여담&quot;&gt;여담&lt;/h3&gt;
+&lt;p&gt;안드로이드 스튜디오 프로젝트에서 UML을 통해 전체적인 구조를 파악하는 방법이 있다.&lt;br /&gt;
+나의 경우에는 github에서 코드를 다운받고, 전체적인 구조를 보고싶을 때 매우 유용하다고 생각한다.
+물론 본인이 짠 코드의 구조를 보고 싶을 때도 유용하다.&lt;/p&gt;
+
+&lt;p&gt;이 플러그인은 물론 처음부터 UML을 그릴 때도 사용 가능하지만, 이미 만들어진 코드의 구조를 볼 때 더 많이 사용하고 있다.&lt;br /&gt;
+처음부터 그릴땐 웹의 draw.io, UMLet 등등 다른 UML툴이 많으니 굳이 안드로이드 스튜디오를 켜서 플러그인에서 그릴 필요는 없을 것 같다.&lt;/p&gt;
+
+&lt;p&gt;사용법은 아래와 같다.&lt;/p&gt;
+
+&lt;h3 id=&quot;사용법&quot;&gt;사용법&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://plugins.jetbrains.com/plugin/4946-simpleumlce&quot;&gt;다운로드 사이트&lt;/a&gt; 에서 &lt;strong&gt;simpleUMLCE_8205.jar&lt;/strong&gt; 파일을 다운로드 받는다.
+&lt;img src=&quot;https://captainwonjong.github.io/images/180920_SimpleUML/img_download.png&quot; alt=&quot;download.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;파일&lt;br /&gt;
+ –&amp;gt; 설정(Command + , or Ctrl + Alt + S)&lt;br /&gt;
+ –&amp;gt; Plugins 탭 선택&lt;br /&gt;
+ –&amp;gt; Install plugin from disk&lt;br /&gt;
+ –&amp;gt; simpleUMLCE_8205.jar Open(확인)&lt;br /&gt;
+ –&amp;gt; Android restart&lt;br /&gt;
+ &lt;img src=&quot;https://captainwonjong.github.io/images/180920_SimpleUML/img_setting.png&quot; alt=&quot;setting.png&quot; /&gt;
+ &lt;small&gt;&lt;/small&gt;&lt;/li&gt;
+  &lt;li&gt;안드로이드 스튜디오에서 현재 열려있는 파일의 패키지 이름 우클릭&lt;br /&gt;
+ –&amp;gt; Add to SimpleUML Diagram&lt;br /&gt;
+ –&amp;gt; New Diagram&lt;br /&gt;
+ &lt;small&gt; 제 프로젝트가 아니어서 프로젝트 이름, 클래스 이름은 가렸습니다.&lt;/small&gt;
+ &lt;img src=&quot;https://captainwonjong.github.io/images/180920_SimpleUML/img_result.png&quot; alt=&quot;result.png&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;small&gt;
+Tip 1) 위 이미지에서 초록색 원이 있는 버튼을 클릭하면 자동으로 정렬된다.&lt;br /&gt;
+Tip 2) 위 이미지에서 파란색 화살표가 있는 탭에서 우클릭을 하면 플러그인 위치를 옮길 수 있다.(Top, Right, Left, Bottom)
+&lt;/small&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;끝&quot;&gt;끝&lt;/h1&gt;
+
+&lt;p&gt;다운로드 사이트 :&lt;br /&gt;
+&lt;a href=&quot;https://plugins.jetbrains.com/plugin/4946-simpleumlce&quot;&gt;https://plugins.jetbrains.com/plugin/4946-simpleumlce&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;참고사이트 :&lt;br /&gt;
+&lt;a href=&quot;https://code.i-harness.com/ko-kr/q/1054838&quot;&gt;https://code.i-harness.com/ko-kr/q/1054838&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 20 Sep 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-09-20/Android-Studio-UML/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-09-20/Android-Studio-UML/</guid>
+      </item>
+    
+      <item>
         <title>My Android Libraries</title>
         <description>&lt;h1 id=&quot;안드로이드-라이브러리-정리&quot;&gt;안드로이드 라이브러리 정리&lt;/h1&gt;
 &lt;p&gt;&lt;small&gt;지속적으로 수정&lt;/small&gt;&lt;/p&gt;
@@ -65,13 +117,13 @@
 7) &lt;a href=&quot;https://github.com/michelelacorte/AndroidAppShortcuts&quot;&gt;AndroidAppShortcuts&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;--calendar&quot;&gt;- Calendar&lt;/h4&gt;
-&lt;p&gt;1) &lt;a href=&quot;https://github.com/maxyou/CalendarPicker&quot;&gt;CalendarPicker&lt;/a&gt;&lt;br /&gt;
-2) &lt;a href=&quot;https://github.com/zhouchaoyuan/excelPanel&quot;&gt;excelPanel&lt;/a&gt;
+&lt;p&gt;1) &lt;a href=&quot;https://github.com/maxyou/CalendarPicker&quot;&gt;CalendarPicker&lt;/a&gt; &lt;br /&gt;
+2) &lt;a href=&quot;https://github.com/zhouchaoyuan/excelPanel&quot;&gt;excelPanel&lt;/a&gt;&lt;br /&gt;
 3) &lt;a href=&quot;https://github.com/Mulham-Raee/Horizontal-Calendar&quot;&gt;Horizontal Calendar&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;--toast&quot;&gt;- Toast&lt;/h4&gt;
-&lt;p&gt;1) &lt;a href=&quot;https://github.com/Shashank02051997/FancyToast-Android&quot;&gt;FancyToast-Android&lt;/a&gt;&lt;br /&gt;
-2) &lt;a href=&quot;https://github.com/GrenderG/Toasty&quot;&gt;Toasty&lt;/a&gt;
+&lt;p&gt;1) &lt;a href=&quot;https://github.com/Shashank02051997/FancyToast-Android&quot;&gt;FancyToast-Android&lt;/a&gt;  &lt;br /&gt;
+2) &lt;a href=&quot;https://github.com/GrenderG/Toasty&quot;&gt;Toasty&lt;/a&gt;&lt;br /&gt;
 3) &lt;a href=&quot;https://github.com/Muddz/StyleableToast&quot;&gt;StyleableToast&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;--graph&quot;&gt;- Graph&lt;/h4&gt;
@@ -117,7 +169,7 @@
 
 &lt;p&gt;오늘은 첫 번째로 &lt;strong&gt;SMS Retriever API&lt;/strong&gt;를 사용하여 SMS가 왔을 때 인증번호를 자동으로 입력하는 방법을 알아보자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://captainwonjong.github.io/images/img_sms_retriever_api_flow.png&quot; alt=&quot;SMS_Retriever_API.png&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://captainwonjong.github.io/images/180910_SmsRetriever/img_sms_retriever_api_flow.png&quot; alt=&quot;SMS_Retriever_API.png&quot; /&gt;
   &lt;small&gt; (SMS Retriever API의 구조) &lt;/small&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;일단 이 API를 사용하려면 아래와 같은 규칙을 &lt;strong&gt;반드시&lt;/strong&gt; 숙지하고 따라야 한다.&lt;/p&gt;
