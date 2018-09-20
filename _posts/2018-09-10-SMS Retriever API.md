@@ -20,7 +20,7 @@ SMS/다이얼러 기본 앱, 어시스턴스 앱, 백업 앱, 계정 관리, 고
   
 오늘은 첫 번째로 **SMS Retriever API**를 사용하여 SMS가 왔을 때 인증번호를 자동으로 입력하는 방법을 알아보자. 
   
-  ![SMS_Retriever_API.png](https://captainwonjong.github.io/images/img_sms_retriever_api_flow.png)
+  ![SMS_Retriever_API.png](https://captainwonjong.github.io/images/180910_SmsRetriever/img_sms_retriever_api_flow.png)
   <small> (SMS Retriever API의 구조) </small><br><br>
   
   
