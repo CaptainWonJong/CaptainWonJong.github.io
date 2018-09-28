@@ -32,7 +32,7 @@ permalink: /about/
 - 2017.05.01 - Current :: **PHP server Secret Project** - This is a secret project and can not be disclosed.
 - 2017.04.08 - 05.27 :: **[Edu Coding Club](http://codingclubs.org/) 청년샘4기** - Junior Maker(Scratch), IoT Maker(Scratch), App Maker(MIT App Inventor) 
 - 2017.02.20 - 02.20 :: Graduate from Hansung University
-- 2017.01.04 - 02.24 :: **[BIGDATA SHOWDOWN Contest](https://www.facebook.com/events/1110908069018193/)** : Stage.5 대상받았는데 상금 안주고 도망감 (문자내역 및 통장내역 스크린샷有)
+- 2017.01.04 - 02.24 :: **[BIGDATA SHOWDOWN Contest](https://www.facebook.com/events/1110908069018193/)** : Stage.5 대상
 
 ### 2016
 - 2016.09.27 - 09.28 :: **Hansung University Engineering Contest** - [Sosanara](https://github.com/sosanara) : 3rd
