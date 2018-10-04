@@ -15,15 +15,16 @@
       &lt;p&gt;Maven 환경에서 Gradle 환경으로 변경하였습니다.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;targetSdkVersion 26 이상으로 버전업&lt;/strong&gt;
+  &lt;li&gt;&lt;strong&gt;targetSdkVersion 26 이상으로 버전업 + minSdkVersion 8 -&amp;gt; 15로 변경&lt;/strong&gt;
     &lt;blockquote&gt;
-      &lt;p&gt;Oreo Notification Channel 대응  &lt;a href=&quot;https://developer.android.com/about/versions/oreo/android-8.0?hl=ko&quot;&gt;https://developer.android.com/about/versions/oreo/android-8.0?hl=ko&lt;/a&gt;&lt;br /&gt;
+      &lt;p&gt;targetSdkVersion을 올림으로써 Oreo Notification Channel 대응  &lt;a href=&quot;https://developer.android.com/about/versions/oreo/android-8.0?hl=ko&quot;&gt;https://developer.android.com/about/versions/oreo/android-8.0?hl=ko&lt;/a&gt;&lt;br /&gt;
 &lt;small&gt;(아래 참고)&lt;/small&gt;&lt;/p&gt;
       &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;compileSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;buildToolsVersion&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;27.0.1&quot;&lt;/span&gt;   
 &lt;span class=&quot;n&quot;&gt;minSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;   
 &lt;span class=&quot;n&quot;&gt;targetSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;   
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
+      &lt;p&gt;현재 안드로이드 사용자의 최소 OS 버전이 4.1인것을 확인하여 minSdkVersion을 15로 변경하였습니다.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;GCM &amp;gt; FCM Migration&lt;/strong&gt;
@@ -37,7 +38,23 @@
 이에 보안을 위해 proguard 난독화를 적용하였습니다.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;기존 ip주소로 되어있던 API주소를 도메인주소로 변경하였습니다&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;기존 ip주소로 되어있던 API주소를 도메인주소로 변경&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;기존의 ip주소로 되어있던 api 주소를 전달받은 도메인주소로 변경하였습니다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;통신모듈 교체&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;AsyncTask를 사용하여 통신하던 소스코드를 OkHttp + Retrofit을 사용하여 별개의 통신모듈을 만들었습니다.&lt;br /&gt;
+기존 코드는 Activitiy에서 통신할 때 마다 AsyncTask를 사용하여 코드분리가 영;;;;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ANR 및 비정상종료 발생지점 방어코드 삽입&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;NullPointerException으로 인해 비정상종료가 발생하는 지점에 방어코드를 삽입하였습니다.&lt;br /&gt;
+(기존 비정상종료 확률 : 1.2%)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;문서&lt;/strong&gt; ) Google Drive 공유 주소는 개인 메일이나 카카오톡으로 전달드리겠습니다.&lt;br /&gt;
@@ -45,9 +62,9 @@
 
 &lt;p&gt;감사합니다 ^-^&lt;/p&gt;
 </description>
-        <pubDate>Tue, 02 Oct 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018-10-02/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-10-02/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</guid>
+        <pubDate>Thu, 04 Oct 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-10-04/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-10-04/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</guid>
       </item>
     
       <item>
