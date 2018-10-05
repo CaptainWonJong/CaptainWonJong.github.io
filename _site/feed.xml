@@ -55,6 +55,11 @@
 (기존 비정상종료 확률 : 1.2%)&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;권한 요청 페이지 추가&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;이전 앱 버전에서 targetSdkVersion이 23미만(마쉬멜로)이어서 사용자에게 권한을 요청하는 페이지가 별도로 있지 않고, 강제로 권한이 동의되었는데, 사용자가 권한을 설정할 수 있도록 필수 및 선택권한을 추가하였습니다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;문서&lt;/strong&gt; ) Google Drive 공유 주소는 개인 메일이나 카카오톡으로 전달드리겠습니다.&lt;br /&gt;
@@ -62,9 +67,9 @@
 
 &lt;p&gt;감사합니다 ^-^&lt;/p&gt;
 </description>
-        <pubDate>Thu, 04 Oct 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018-10-04/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-10-04/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</guid>
+        <pubDate>Fri, 05 Oct 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-10-05/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-10-05/A-.apk-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC/</guid>
       </item>
     
       <item>
