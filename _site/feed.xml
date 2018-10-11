@@ -6,6 +6,57 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Android Gradle Tip (1)</title>
+        <description>&lt;h2 id=&quot;android-gradle-tip---reduce-app-size&quot;&gt;Android Gradle Tip - Reduce App Size&lt;/h2&gt;
+
+&lt;p&gt;안드로이드의 Gradle에서는 참 많은 일을 할 수 있다.&lt;br /&gt;
+사실 Gradle만 잘 설정해도 개발기간을 단축시킬 수 있다고 생각한다.&lt;br /&gt;
+오늘은 Gradle의 설정값을 추가하여 앱의 크기를 조금이나마 줄일 수 있는 방법을 알아보자.&lt;/p&gt;
+
+&lt;p&gt;아래 코드를 &lt;strong&gt;build.gradle(app)&lt;/strong&gt;에 추가해주자!&lt;/p&gt;
+
+&lt;div class=&quot;language-gradle highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;android&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;packagingOptions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;excludes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/DEPENDENCIES'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/LICENSE'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/LICENSE.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'LICENSE.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'LICENSE'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/license.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/NOTICE'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'NOTICE'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'asm-license.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/NOTICE.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/notice.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/ASL2.0'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'.readme'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'.readme.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/maven/com.google.guava/guava/pom.properties'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/maven/com.google.guava/guava/pom.xml'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/maven/com.squareup.okhttp3/okhttp/pom.properties'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/maven/com.squareup.okio/okio/pom.properties'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/maven/com.squareup.okio/okio/pom.xml'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/maven/com.squareup.okhttp3/okhttp/pom.xml'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'META-INF/MANIFEST.MF'&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://google.github.io/android-gradle-dsl/current/com.android.build.gradle.internal.dsl.PackagingOptions.html&quot;&gt;여기&lt;/a&gt;를 보면 packagingOptions의 메소드에는 exclude, merge, pickFirst가 있고 Properties에는 doNotStrip, excludes, merges, pickFirsts가 있다고 한다.&lt;br /&gt;
+&lt;small&gt;자세한 내용은 위 사이트에 너무 잘 나와있기 때문에 생략한다.&lt;/small&gt;&lt;br /&gt;&lt;br /&gt;
+위에 사용한 packagingOptions.excludes는 Gradle에서 빌드하고 APK 파일을 만들 때, 위의 해당 파일들을 제외하는 옵션으로 앱의 크기를 줄일 수 있다. &lt;small&gt;(아주 조금)&lt;/small&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;참고-&quot;&gt;참고 )&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Gradle&lt;/strong&gt; : 빌드 자동화 툴 중 하나로, 아주 자세한 내용은 &lt;a href=&quot;https://gradle.org/features/&quot;&gt;여기&lt;/a&gt;에 나와있다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Build&lt;/strong&gt; : 안드로이드에서의 빌드구성은 &lt;a href=&quot;https://developer.android.com/studio/build/?hl=ko&quot;&gt;여기&lt;/a&gt;에 아주 자세히 나와있다.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 11 Oct 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-10-11/Android-Gradle-Tip-(1)/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-10-11/Android-Gradle-Tip-(1)/</guid>
+      </item>
+    
+      <item>
         <title>Android ListView Dynamic Height</title>
         <description>&lt;h2 id=&quot;listview-item-갯수만큼의-동적-높이-조절&quot;&gt;ListView item 갯수만큼의 동적 높이 조절&lt;/h2&gt;
 
