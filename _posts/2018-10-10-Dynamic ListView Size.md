@@ -3,7 +3,7 @@ layout: post
 title: "Android ListView Dynamic Height"
 description: "ListView item 갯수만큼 동적 높이 조절"
 date: 2018-10-10
-tags: [notice]
+tags: [Android, ListView]
 comments: true
 share: true
 ---

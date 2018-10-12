@@ -3,7 +3,7 @@ layout: post
 title: "Android Gradle Tip (1)"
 description: "Android Gradle Tip - Reduce App Size"
 date: 2018-10-11
-tags: [Gradle]
+tags: [Android, Gradle]
 comments: true
 share: true
 ---
