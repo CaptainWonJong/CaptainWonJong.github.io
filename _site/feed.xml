@@ -6,6 +6,49 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Issuing and renewing APNS certificates</title>
+        <description>&lt;h3 id=&quot;apns-인증서-발급-및-갱신하기&quot;&gt;APNS 인증서 발급 및 갱신하기&lt;/h3&gt;
+
+&lt;p&gt;매년 푸시 인증서가 만료되면 갱신해야 하기 때문에 구글에서 남의 블로그를 뒤져서 보는것보다 내 블로그에 적어놓는게 안전할 것 같아서 자세히 적어놓는다.&lt;br /&gt;
+물론 &lt;a href=&quot;http://qnibus.com/blog/how-to-make-certification-for-apns/&quot;&gt;여기&lt;/a&gt;의 블로그 내용을 (굉장히)많이 참고하였다.&lt;/p&gt;
+
+&lt;p&gt;들어가기에 앞서 &lt;a href=&quot;https://developer.apple.com/account/ios/certificate/development&quot;&gt;Apple Developer&lt;/a&gt;에 가입되어있어야 하는것은 기본이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-apns-인증서-발급을-위한-대인-인증서-만들기&quot;&gt;1. APNS 인증서 발급을 위한 대인 인증서 만들기&lt;/h3&gt;
+&lt;p&gt;가장 먼저 CertificateSigningRequest.certSigningRequest 인증서를 만들어야 한다.&lt;br /&gt;
+1) 맥북의 키체인(Keychain) &amp;gt; 인증서 지원 &amp;gt; 인증 기관에서 인증서 요청 클릭.&lt;br /&gt;
+2) (디벨로퍼의) 이메일 입력 &amp;gt; 디스크에 저장됨, 본인이 키 쌍 정보 지정 체크 &amp;gt; 계속 클릭.&lt;br /&gt;
+3) 키 크기 : 2048비트 / 알고리즘 : RSA &amp;gt; 계속 클릭 &amp;gt; 끝!&lt;/p&gt;
+
+&lt;h3 id=&quot;2-apns-인증서-발급받기&quot;&gt;2. APNS 인증서 발급받기&lt;/h3&gt;
+&lt;p&gt;1) &lt;a href=&quot;https://developer.apple.com/account/ios/certificate/development&quot;&gt;Apple Developer&lt;/a&gt; 에서 Identifiers &amp;gt; App IDs 에서 만들어 놓은 인증서 클릭&lt;br /&gt;
+2) 인증서 하단의 Edit 버튼 클릭 &amp;gt; Push Notifications 탭에서 Create Certificate 클릭 (개발용, 배포용 확인) &lt;br /&gt;
+3) Continue 클릭 후 Choose File… 버튼이 나온다면 1번에서 만들어두었던 CertificateSigningRequest.certSigningRequest 파일을 연결 해 준다.&lt;br /&gt;
+4) Generate 후 인증서 다운로드 (.cer 파일이 다운로드 된다.)&lt;br /&gt;
+5) 다운로드 된 인증서를 클릭(실행) 해 주면 키체인에 인증서가 추가된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-1-서버-인증서-만들기&quot;&gt;3-1) 서버 인증서 만들기&lt;/h3&gt;
+&lt;p&gt;서버 인증서를 만들기 전에 키체인을 열어 방금 설치한 Apple Development iOS Push Services: ~~~~ 인증서를 찾아 Export 후 .p12 파일로 만들어줘야 한다.&lt;br /&gt;
+1) Apple Development iOS Push Services: ~~~~ 인증서 우클릭 &amp;gt; 보내기 클릭&lt;br /&gt;
+2) cert.p12 파일로 저장 후 암호입력 &amp;gt; 승인클릭&lt;br /&gt;
+3) 열쇠모양의 개인키를 선택해 우클릭 &amp;gt; 보내기 클릭&lt;br /&gt;
+4) key.p12 파일로 저장 후 암호입력 &amp;gt; 승인클릭&lt;br /&gt;
+&lt;strong&gt;결과물&lt;/strong&gt; : cert.p12 파일과 key.p12 파일이 만들어졌다면 성공!&lt;/p&gt;
+
+&lt;h3 id=&quot;3-2-서버-인증서-만들기&quot;&gt;3-2) 서버 인증서 만들기&lt;/h3&gt;
+&lt;p&gt;우리의 목적은 apns.pem 파일을 만드는 것이다.&lt;br /&gt;
+아래의 4개의 명령어를 터미널을 통해 입력해보자.&lt;br /&gt;
+1) 아래 명령어를 터미널에 입력 후, cert.p12의 비밀번호 입력&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl pkcs12 –clcerts –nokeys –out cert.pem –in cert.p12
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 17 Oct 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-10-17/APNS-%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A5-%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%B3%E1%86%B8,-%E1%84%80%E1%85%A2%E1%86%BC%E1%84%89%E1%85%B5%E1%86%AB/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-10-17/APNS-%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A5-%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%B3%E1%86%B8,-%E1%84%80%E1%85%A2%E1%86%BC%E1%84%89%E1%85%B5%E1%86%AB/</guid>
+      </item>
+    
+      <item>
         <title>A**** app Fixed (iOS)</title>
         <description>&lt;h3 id=&quot;안녕하세요-이원종입니다a-앱-ios-수정사항-전달드립니다&quot;&gt;안녕하세요. 이원종입니다.&lt;br /&gt;A**** 앱 iOS 수정사항 전달드립니다.&lt;/h3&gt;
 
@@ -344,7 +387,9 @@ Tip 2) 위 이미지에서 파란색 화살표가 있는 탭에서 우클릭을 
 &lt;p&gt;1) &lt;a href=&quot;https://github.com/dev-labs-bg/transitioner&quot;&gt;Transitioner&lt;/a&gt;&lt;br /&gt;
 2) &lt;a href=&quot;https://github.com/JustKiddingBaby/FragmentRigger&quot;&gt;FragmentRigger&lt;/a&gt;&lt;br /&gt;
 3) &lt;a href=&quot;https://github.com/renjianan/RecyclerBanner&quot;&gt;RecyclerBanner&lt;/a&gt;&lt;br /&gt;
-4) &lt;a href=&quot;https://github.com/hugeterry/CoordinatorTabLayout&quot;&gt;CoordinatorTabLayout&lt;/a&gt;
+4) &lt;a href=&quot;https://github.com/hugeterry/CoordinatorTabLayout&quot;&gt;CoordinatorTabLayout&lt;/a&gt;&lt;br /&gt;
+5) &lt;a href=&quot;https://github.com/daimajia/AndroidSwipeLayout&quot;&gt;AndroidSwipeLayout&lt;/a&gt;&lt;br /&gt;
+6) &lt;a href=&quot;https://github.com/flschweiger/SwipeStack&quot;&gt;SwipeStack&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;view&quot;&gt;View&lt;/h3&gt;
