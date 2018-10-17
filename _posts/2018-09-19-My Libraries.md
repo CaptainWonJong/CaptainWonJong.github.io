@@ -60,7 +60,9 @@ share: true
 1) [Transitioner](https://github.com/dev-labs-bg/transitioner)  
 2) [FragmentRigger](https://github.com/JustKiddingBaby/FragmentRigger)  
 3) [RecyclerBanner](https://github.com/renjianan/RecyclerBanner)  
-4) [CoordinatorTabLayout](https://github.com/hugeterry/CoordinatorTabLayout)
+4) [CoordinatorTabLayout](https://github.com/hugeterry/CoordinatorTabLayout)  
+5) [AndroidSwipeLayout](https://github.com/daimajia/AndroidSwipeLayout)  
+6) [SwipeStack](https://github.com/flschweiger/SwipeStack)  
 <br>
 
 ### View
