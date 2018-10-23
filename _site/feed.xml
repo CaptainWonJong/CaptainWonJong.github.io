@@ -6,6 +6,54 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Android ClipBoard Copy</title>
+        <description>&lt;h2 id=&quot;android-클립보드로-텍스트-복사하기-소스코드&quot;&gt;Android 클립보드로 텍스트 복사하기 (소스코드)&lt;/h2&gt;
+
+&lt;p&gt;안드로이드 클립보드로 텍스트를 복사하는데는 SDK 11버전을 기준으로 2가지로 나뉜다.&lt;br /&gt;
+2가지 방법 다 알아보겠지만, minSdkVersion을 11아래로 설정한적이 없어서 옛날버전은 무시해도 될 것 같다;;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-honeycomb-이하-버전에서-클립보드로-텍스트-복사하기&quot;&gt;1. Honeycomb 이하 버전에서 클립보드로 텍스트 복사하기&lt;/h4&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strCopy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;YOUR COPY TEXT&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;ClipboardManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clipboardManager&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ClipboardManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getSystemService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;CLIPBOARD_SERVICE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clipboardManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strCopy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;안드로이드 스튜디오에서 clipboardManager.setText(strCopy); 을 사용하면 setText가 deprecated 되어 취소선이 그어질 것이다ㅠㅠ&lt;br /&gt;
+그러니 아래 소스코드를 사용하자!&lt;/p&gt;
+
+&lt;h4 id=&quot;2-honeycomb-윗-버전에서-클립보드로-텍스트-복사하기&quot;&gt;2. Honeycomb 윗 버전에서 클립보드로 텍스트 복사하기&lt;/h4&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strLabel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;YOUR LABEL&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strCopy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;YOUR COPY TEXT&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;ClipboardManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clipboardManager&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ClipboardManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSystemService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;CLIPBOARD_SERVICE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ClipData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clipData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ClipData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;newPlainText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strLabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strCopy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clipboardManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setPrimaryClip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clipData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그밖의 유용한 클립보드 관련 내용들은 아래와 같다.&lt;/p&gt;
+
+&lt;p&gt;클립보드 동작 개념 : 
+&lt;br /&gt;
+&lt;a href=&quot;http://dktfrmaster.blogspot.com/2016/10/blog-post.html&quot;&gt;http://dktfrmaster.blogspot.com/2016/10/blog-post.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Toss 앱처럼 계좌번호와 같은 특정 양식의 텍스트를 복사하면 서비스에서 탐지하여 윈도우매니저를 통해 앱으로 연결해 주는 방법 : 
+&lt;br /&gt;
+&lt;a href=&quot;https://bit.ly/2yVgQrs&quot;&gt;https://bit.ly/2yVgQrs&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/34626143/how-to-get-notified-when-user-copied-something-in-android&quot;&gt;https://stackoverflow.com/questions/34626143/how-to-get-notified-when-user-copied-something-in-android&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+참고사이트 :
+&lt;a href=&quot;https://developer.android.com/reference/android/content/ClipboardManager/&quot;&gt;https://developer.android.com/reference/android/content/ClipboardManager/&lt;/a&gt;
+&lt;a href=&quot;https://developer.android.com/reference/android/content/ClipData&quot;&gt;https://developer.android.com/reference/android/content/ClipData&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 23 Oct 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-10-23/Android-ClipBoard-Copy/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-10-23/Android-ClipBoard-Copy/</guid>
+      </item>
+    
+      <item>
         <title>Issuing and renewing APNS certificates</title>
         <description>&lt;h3 id=&quot;apns-인증서-발급-및-갱신하기&quot;&gt;APNS 인증서 발급 및 갱신하기&lt;/h3&gt;
 
