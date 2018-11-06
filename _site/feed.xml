@@ -331,10 +331,9 @@
     &lt;blockquote&gt;
       &lt;p&gt;targetSdkVersion을 올림으로써 Oreo Notification Channel 대응  &lt;a href=&quot;https://developer.android.com/about/versions/oreo/android-8.0?hl=ko&quot;&gt;https://developer.android.com/about/versions/oreo/android-8.0?hl=ko&lt;/a&gt;&lt;br /&gt;
 &lt;small&gt;(아래 참고)&lt;/small&gt;&lt;/p&gt;
-      &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;compileSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;buildToolsVersion&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;27.0.1&quot;&lt;/span&gt;   
+      &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;compileSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt; 
 &lt;span class=&quot;n&quot;&gt;minSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;   
-&lt;span class=&quot;n&quot;&gt;targetSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;   
+&lt;span class=&quot;n&quot;&gt;targetSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
       &lt;p&gt;현재 안드로이드 사용자의 최소 OS 버전이 4.1인것을 확인하여 minSdkVersion을 15로 변경하였습니다.&lt;/p&gt;
     &lt;/blockquote&gt;
