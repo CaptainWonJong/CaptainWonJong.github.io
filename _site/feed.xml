@@ -226,23 +226,42 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-apns-인증서-발급을-위한-대인-인증서-만들기&quot;&gt;1. APNS 인증서 발급을 위한 대인 인증서 만들기&lt;/h3&gt;
 &lt;p&gt;가장 먼저 CertificateSigningRequest.certSigningRequest 인증서를 만들어야 한다.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/1/APNS_1_1.png&quot; alt=&quot;APNS_1_1.png&quot; /&gt;
 1) 맥북의 키체인(Keychain) &amp;gt; 인증서 지원 &amp;gt; 인증 기관에서 인증서 요청 클릭.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/1/APNS_1_2.png&quot; alt=&quot;APNS_1_2.png&quot; /&gt;
 2) (디벨로퍼의) 이메일 입력 &amp;gt; 디스크에 저장됨, 본인이 키 쌍 정보 지정 체크 &amp;gt; 계속 클릭.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/1/APNS_1_3.png&quot; alt=&quot;APNS_1_3.png&quot; /&gt;
 3) 키 크기 : 2048비트 / 알고리즘 : RSA &amp;gt; 계속 클릭 &amp;gt; 끝!&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;2-apns-인증서-발급받기&quot;&gt;2. APNS 인증서 발급받기&lt;/h3&gt;
-&lt;p&gt;1) &lt;a href=&quot;https://developer.apple.com/account/ios/certificate/development&quot;&gt;Apple Developer&lt;/a&gt; 에서 Identifiers &amp;gt; App IDs 에서 만들어 놓은 인증서 클릭&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/2/APNS_2_1.png&quot; alt=&quot;APNS_2_1.png&quot; /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/2/APNS_2_2.png&quot; alt=&quot;APNS_2_2.png&quot; /&gt;
+1) &lt;a href=&quot;https://developer.a릭ple.com/account/ios/certificate/development&quot;&gt;Apple Developer&lt;/a&gt; 에서 Identifiers &amp;gt; App IDs 에서 만들어 놓은 인증서 클릭 -&amp;gt; Edit 클릭&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/2/APNS_2_3.png&quot; alt=&quot;APNS_2_3.png&quot; /&gt;
 2) 인증서 하단의 Edit 버튼 클릭 &amp;gt; Push Notifications 탭에서 Create Certificate 클릭 (개발용, 배포용 확인) &lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/2/APNS_2_4.png&quot; alt=&quot;APNS_2_4.png&quot; /&gt;
 3) Continue 클릭 후 Choose File… 버튼이 나온다면 1번에서 만들어두었던 CertificateSigningRequest.certSigningRequest 파일을 연결 해 준다.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/2/APNS_2_5.png&quot; alt=&quot;APNS_2_5.png&quot; /&gt;
 4) Generate 후 인증서 다운로드 (.cer 파일이 다운로드 된다.)&lt;br /&gt;
 5) 다운로드 된 인증서를 클릭(실행) 해 주면 키체인에 인증서가 추가된다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;3-1-서버-인증서-만들기&quot;&gt;3-1) 서버 인증서 만들기&lt;/h3&gt;
 &lt;p&gt;서버 인증서를 만들기 전에 키체인을 열어 방금 설치한 Apple Development iOS Push Services: ~~~~ 인증서를 찾아 Export 후 .p12 파일로 만들어줘야 한다.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/3/APNS_3_1.png&quot; alt=&quot;APNS_3_1.png&quot; /&gt;
 1) Apple Development iOS Push Services: ~~~~ 인증서 우클릭 &amp;gt; 보내기 클릭&lt;br /&gt;
 2) cert.p12 파일로 저장 후 암호입력 &amp;gt; 승인클릭&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/3/APNS_3_2.png&quot; alt=&quot;APNS_3_2.png&quot; /&gt;
 3) 열쇠모양의 개인키를 선택해 우클릭 &amp;gt; 보내기 클릭&lt;br /&gt;
 4) key.p12 파일로 저장 후 암호입력 &amp;gt; 승인클릭&lt;br /&gt;
 &lt;strong&gt;결과물&lt;/strong&gt; : cert.p12 파일과 key.p12 파일이 만들어졌다면 성공!&lt;/p&gt;
@@ -277,7 +296,9 @@
   &lt;li&gt;cert.pem&lt;/li&gt;
   &lt;li&gt;key.pem&lt;/li&gt;
   &lt;li&gt;key.unencrypted.pem&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;apns.pem&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;apns.pem&lt;/strong&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181022_RenewingApns/4/APNS_4_1.png&quot; alt=&quot;APNS_4_1.png&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;
