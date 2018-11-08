@@ -266,6 +266,11 @@
 4) key.p12 파일로 저장 후 암호입력 &amp;gt; 승인클릭&lt;br /&gt;
 &lt;strong&gt;결과물&lt;/strong&gt; : cert.p12 파일과 key.p12 파일이 만들어졌다면 성공!&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;11월 7일 추가 확인 사항 )&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;서버에 따라 .pem 파일을 사용하지 않고, cert.p12 파일을 사용하는 경우도 많이 있다고 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;3-2-서버-인증서-만들기&quot;&gt;3-2) 서버 인증서 만들기&lt;/h3&gt;
 &lt;p&gt;우리의 목적은 apns.pem 파일을 만드는 것이다.&lt;br /&gt;
