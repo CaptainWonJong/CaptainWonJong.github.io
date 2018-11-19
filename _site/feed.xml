@@ -6,6 +6,54 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Git Branch Usage Strategy</title>
+        <description>&lt;h2 id=&quot;git-branch-사용-전략&quot;&gt;Git Branch 사용 전략&lt;/h2&gt;
+
+&lt;p&gt;먼저 이 글은 안드로이드 프로젝트에 협업하며 사용 예정/사용 중/사용할 수도 있는 Git 전략을 메모합니다.&lt;br /&gt;
+12월에 프로젝트를 하나 진행할텐데, Git을 사용하며 Branch를 약속하는 도중 개발자분께 배운 내용을 잊지 않기 위에 메모합니다. &lt;small&gt;(다듬을 예정)&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;글을 쓰기에 앞서 Git-Flow를 잘 정리해 준 &lt;a href=&quot;http://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html&quot;&gt;우아한 형제들 기술 블로그&lt;/a&gt;에 감사의 인사를 드립니다.&lt;/p&gt;
+
+&lt;p&gt;만약 이 기술블로그를 알지 못했다면, Git-Flow 뿐 아닌 Github-Flow, Gitlab-Flow등을 모르고 살아왔을지도 모릅니다..ㅠㅠ&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이번에 Git에서 새롭게 알게된 점&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;git stash&lt;br /&gt;
+-&amp;gt; feature branch에서 commit을 하지 않고 develop branch 등 다른 branch로 이동을 할 수 없을 때, 클립보드처럼 현재 브랜치의 상태를 저장하고 다른 브랜치로 이동 가능
+-&amp;gt; source tree 연동 시 아래 표시한 곳에 쌓이게 된다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;git과 jenkins의 연동&lt;br /&gt;
+-&amp;gt; 자동 빌드를 통한 apk 및 ipa 파일 확인&lt;br /&gt;
+-&amp;gt; develop branch에서 사용 시 유용&lt;br /&gt;
+-&amp;gt; 자동 빌드 시 console에서 빌드하는 것들을 jenkins에 설정 해 주어야 한다고 하지만 나는 아직 잘 모름;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;git과 jira의 연동&lt;br /&gt;
+-&amp;gt; feature branch에서 develop branch로 merge 할 때, jira를 통해 이슈 등 공유 가능&lt;br /&gt;
+-&amp;gt; feature 갯수만큼 jira의 이슈가 늘어나지만 나쁜 것은 아니라고 함.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;git과 gitlab의 연동&lt;br /&gt;
+-&amp;gt; github 비공계처럼 사용하면 되지만, 브랜치에 권한을 줘서 develop이나 master에 푸시하기 전, 리더의 QA 후 리더가 푸시 가능&lt;br /&gt;
+(-&amp;gt; 푸시 권한 필요시 연동하면 좋음)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;며칠 간 해외여행에 예비군에 블로그를 할 시간이 많이 없었지만, 다시 힘내야 겠다. &lt;br /&gt;
+&lt;small&gt;(GDG Festa! Seoul 리뷰도 쓰고싶은데……)&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;(Gradle Tip도 빨리 써야하는데……)&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;(iOS 배포하는 방법과 이슈들도 적어놔야 하는데……)&lt;/small&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 19 Nov 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-11-19/Git-Flow-Usage-Strategy/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-11-19/Git-Flow-Usage-Strategy/</guid>
+      </item>
+    
+      <item>
         <title>Android Dynamic Include Custom Layout</title>
         <description>&lt;h2 id=&quot;android-custom-layout-동적으로-추가하기&quot;&gt;Android Custom Layout 동적으로 추가하기&lt;/h2&gt;
 
