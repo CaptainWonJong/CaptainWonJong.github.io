@@ -38,8 +38,11 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;git과 gitlab의 연동&lt;br /&gt;
--&amp;gt; github 비공계처럼 사용하면 되지만, 브랜치에 권한을 줘서 develop이나 master에 푸시하기 전, 리더의 QA 후 리더가 푸시 가능&lt;br /&gt;
+-&amp;gt; github 비공개처럼 사용하면 되지만, 브랜치에 권한을 줘서 develop이나 master에 푸시하기 전, 리더의 QA 후 리더가 푸시 가능&lt;br /&gt;
 (-&amp;gt; 푸시 권한 필요시 연동하면 좋음)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Android Studio와 git 연동 시 소스 정렬(Optimize) 하고 올린다면, 정렬을 매크로로 설정하고 올리면 편함 (협업중이라면 미리 논의를 할 것)&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
