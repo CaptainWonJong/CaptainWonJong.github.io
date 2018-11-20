@@ -22,6 +22,7 @@ share: true
 1. git stash  
 -> feature branch에서 commit을 하지 않고 develop branch 등 다른 branch로 이동을 할 수 없을 때, 클립보드처럼 현재 브랜치의 상태를 저장하고 다른 브랜치로 이동 가능
 -> source tree 연동 시 아래 표시한 곳에 쌓이게 된다.
+  ![img_git_stash.png.png](https://captainwonjong.github.io/images/181120_GitBranchUsageStrategy/img_git_stash.png)  
 
 2. git과 jenkins의 연동  
 -> 자동 빌드를 통한 apk 및 ipa 파일 확인  
