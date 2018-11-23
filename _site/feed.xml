@@ -6,6 +6,117 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Awesome Custom RecyclerView Collection</title>
+        <description>&lt;h2 id=&quot;custom-recyclerview-collection&quot;&gt;Custom RecyclerView Collection&lt;/h2&gt;
+
+&lt;p&gt;RecyclerView LayoutManager resources&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;carousellayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/Azoft/CarouselLayoutManager&quot;&gt;CarouselLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Android Carousel LayoutManager for RecyclerView &lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/CarouselLayoutManager.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;chipslayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/BelooS/ChipsLayoutManager&quot;&gt;ChipsLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A custom layout manager for RecyclerView which mimicric TextView span behaviour, flow layouts behaviour with support of amazing recyclerView features&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/ChipsLayoutManager.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;hivelayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/Chacojack/HiveLayoutManager&quot;&gt;HiveLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;这是一个蜂巢布局管理器，它可以在RecyclerView中实现像蜂巢一样的布局。&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/HiveLayoutManager.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;vlayout&quot;&gt;&lt;a href=&quot;https://github.com/alibaba/vlayout&quot;&gt;vlayout&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一整套布局方案和布局间的组件复用的问题。&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/vlayout.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;flexbox-layout&quot;&gt;&lt;a href=&quot;https://github.com/google/flexbox-layout&quot;&gt;flexbox-layout&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;FlexboxLayout is a library project which brings the similar capabilities of &lt;a href=&quot;https://www.w3.org/TR/css-flexbox-1&quot;&gt;CSS Flexible Box Layout Module&lt;/a&gt; to Android.&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/flexbox-layout.gif&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/flexbox-layout2.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;londoneyelayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/danylovolokh/LondonEyeLayoutManager&quot;&gt;LondonEyeLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A Layoutmanager that must be used with RecyclerView. When list is scrolled views are moved by circular trajectory&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/LondonEyeLayoutManager.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;discretescrollview&quot;&gt;&lt;a href=&quot;https://github.com/yarolegovich/DiscreteScrollView&quot;&gt;DiscreteScrollView&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Scrollable list of items, where current item is centered and can be changed using swipes&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/DiscreteScrollView.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;greedo-layout-for-android&quot;&gt;&lt;a href=&quot;https://github.com/500px/greedo-layout-for-android&quot;&gt;greedo-layout-for-android&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Full aspect ratio grid LayoutManager for Android’s RecyclerView also:&lt;a href=&quot;https://github.com/asdzheng/SuitedRecyclerView&quot;&gt;SuitedRecyclerView&lt;/a&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/greedo-layout-for-android.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;zlayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/mcxtzhang/ZLayoutManager&quot;&gt;ZLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;仿探探、人人影视 炫动滑动 卡片层叠 和流式布局等。同样效果的还有&lt;a href=&quot;https://github.com/yuqirong/CardSwipeLayout&quot;&gt;CardSwipeLayout
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/ZLayoutManager.gif&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/ZLayoutManager2.gif&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/ZLayoutManager3.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;customlayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/leochuan/CustomLayoutManager&quot;&gt;CustomLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A Circle and a zoom layoutManager for android RecyclerView&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/CustomLayoutManager.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;assembleessay&quot;&gt;&lt;a href=&quot;https://github.com/rantianhua/AssembleEssay&quot;&gt;AssembleEssay&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;实现一个流动布局，可以用作文章展示，也可以用作标签展示，并且可以很方便地为其添加布局动画，示例代码里添加了拖拽插入的动画，如效果图。&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/AssembleEssay.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;gallerylayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/BCsl/GalleryLayoutManager&quot;&gt;GalleryLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;实现 Android 中 Gallery 或者 ViewPager 控件的效果，支持垂直和水平两个方向，支持 RecycleView 的试图回收机制。&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/GalleryLayoutManager.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;expandlayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/Azoft/ExpandLayoutManager&quot;&gt;ExpandLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Android Expandable LayoutManager for RecyclerView&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181123_RecyclerView/ExpandLayoutManager.gif&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;vegalayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/xmuSistone/VegaLayoutManager&quot;&gt;VegaLayoutManager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;fade and shrink the head itemView when scrolling.
+&lt;img src=&quot;https://github.com/xmuSistone/VegaLayoutManager/raw/master/capture.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;flowlayoutmanager&quot;&gt;&lt;a href=&quot;https://github.com/xiaofeng-han/AndroidLibs/tree/master/flowlayoutmanager&quot;&gt;flowlayoutmanager&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;FlowLayoutManager is a layoutManager that works with Android RecyclerView Widget, to layout views in flow style, with support of predictive animations, item per line limit, auto measurement &amp;amp; alignments (left or right)
+&lt;img src=&quot;https://cloud.githubusercontent.com/assets/15362031/15170689/fe3117d6-16fc-11e6-8ffc-3e90b9bf5430.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://github.com/jiang111/Awesome-RecyclerView-LayoutManager&quot;&gt;https://github.com/jiang111/Awesome-RecyclerView-LayoutManager&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Nov 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-11-23/Awesome_Custom_RecyclerView/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-11-23/Awesome_Custom_RecyclerView/</guid>
+      </item>
+    
+      <item>
         <title>Git Branch Usage Strategy</title>
         <description>&lt;h2 id=&quot;git-branch-사용-전략&quot;&gt;Git Branch 사용 전략&lt;/h2&gt;
 
@@ -53,8 +164,8 @@
 
 </description>
         <pubDate>Mon, 19 Nov 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018-11-19/Git-Flow-Usage-Strategy/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-11-19/Git-Flow-Usage-Strategy/</guid>
+        <link>http://localhost:4000/2018-11-19/Git-Branch-Usage-Strategy/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-11-19/Git-Branch-Usage-Strategy/</guid>
       </item>
     
       <item>
