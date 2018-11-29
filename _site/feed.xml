@@ -792,12 +792,14 @@ Tip 2) 위 이미지에서 파란색 화살표가 있는 탭에서 우클릭을 
 2) &lt;a href=&quot;https://developer.android.com/topic/libraries/data-binding/?hl=ko&quot;&gt;DataBinding&lt;/a&gt;&lt;br /&gt;
 3) &lt;a href=&quot;https://github.com/google/dagger&quot;&gt;Dagger2&lt;/a&gt;&lt;br /&gt;
 4) &lt;a href=&quot;https://developer.android.com/topic/libraries/architecture/livedata&quot;&gt;LiveData&lt;/a&gt;&lt;br /&gt;
-5) &lt;a href=&quot;https://projectlombok.org/setup/android&quot;&gt;Lombok&lt;/a&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;sqlite-orm-database&quot;&gt;SQLite ORM (DataBase)&lt;/h2&gt;
 &lt;p&gt;1) &lt;a href=&quot;https://realm.io/&quot;&gt;Realm&lt;/a&gt;&lt;br /&gt;
 2) &lt;a href=&quot;https://developer.android.com/topic/libraries/architecture/room&quot;&gt;Room&lt;/a&gt;&lt;br /&gt;
+3) &lt;a href=&quot;https://projectlombok.org/setup/android&quot;&gt;Lombok&lt;/a&gt;&lt;br /&gt;
+4) &lt;a href=&quot;https://github.com/greenrobot/greenDAO&quot;&gt;greenDAO&lt;/a&gt;&lt;br /&gt;
+5) &lt;a href=&quot;http://ormlite.com/&quot;&gt;OrmLite&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;reactivex&quot;&gt;ReactiveX&lt;/h2&gt;
