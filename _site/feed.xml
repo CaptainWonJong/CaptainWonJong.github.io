@@ -6,6 +6,49 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Android Gradle Tip (2)</title>
+        <description>&lt;h2 id=&quot;android-gradle-tip---building-with-the-console&quot;&gt;Android Gradle Tip - Building with the console&lt;/h2&gt;
+
+&lt;p&gt;안드로이드 개발을 하며 소스코드를 빌드하거나 디바이스에 인스톨 할 때는 항상 안드로이드 스튜디오의 버튼을 눌렀었다.&lt;br /&gt;
+조금 더 작업이 있다면 Build Variants에서 flavor를 나눠 여러가지 버전을 생성하여 빌드를 했었다.&lt;/p&gt;
+
+&lt;p&gt;그러나 만약 git에 jenkins와 같은 지속적 통합(continuous integration) 도구를 사용하여 여러 버전의 apk파일을 만들어야 하는 일이 생긴다면 콘솔을 이용해야 한다.&lt;/p&gt;
+
+&lt;p&gt;이 글은 ‘이런게 있다~’ 라고만 정리한 글이니 자세한 내용이 필요하다면 아래 링크들을 통해 확인하는 것이 훨씬 도움이 될 것이다.&lt;/p&gt;
+
+&lt;p&gt;해당 프로젝트 경로로 들어가&lt;br /&gt;
+Windows는&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-linux&quot;&gt;gradlew tasks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Mac은&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-linux&quot;&gt;./gradlew tasks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;와 같은 명령어를 치면 아래와 같은 화면이 나온다.&lt;br /&gt;
+사용하고 싶은 명령어를 사용하자;; (옆에 설명이 잘 되어있음)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://captainwonjong.github.io/images/181203_GradleTip2/Gradle_2_1.png&quot; alt=&quot;Gradle_2_1.png&quot; /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181203_GradleTip2/Gradle_2_2.png&quot; alt=&quot;Gradle_2_2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09&quot;&gt;여기&lt;/a&gt;에서 Gradle은 성능 향상을 위해서 증분 빌드, 작업 결과 캐싱, 증분 하위 작업, 데몬 프로세스 재사용, 병렬 실행, 병렬 다운로드 등의 기능을 지원한다고 하지만 구체적으로는 모르겠다.&lt;br /&gt;
+–&amp;gt; 이 점은 공부가 필요!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gradle.org/features/&quot;&gt;Gradle 공식 홈페이지&lt;/a&gt;에서 도큐먼트가 자세히 나와있으니 시간이 될 때마다 공부를 해보자!&lt;/p&gt;
+
+&lt;p&gt;./gradlew 명령어를 통해 콘솔에서 빌드하는 방법을 더 자세히 알고싶다면 &lt;a href=&quot;https://developer.android.com/studio/build/building-cmdline?hl=ko&quot;&gt;Android Developer Site&lt;/a&gt;를 참고!&lt;/p&gt;
+
+&lt;p&gt;다음에 무조건 포스트 하겠지만 빌드 변형 구성에 관한 내용은 &lt;a href=&quot;https://developer.android.com/studio/build/build-variants?hl=ko&quot;&gt;여기&lt;/a&gt;를 참고하고,&lt;br /&gt;
+Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;https://developer.android.com/studio/run/?hl=ko&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/p&gt;
+
+&lt;p&gt;끝!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 03 Dec 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-12-03/Android-Gradle-Tip-(2)/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-12-03/Android-Gradle-Tip-(2)/</guid>
+      </item>
+    
+      <item>
         <title>Awesome Custom RecyclerView Collection</title>
         <description>&lt;h2 id=&quot;custom-recyclerview-collection&quot;&gt;Custom RecyclerView Collection&lt;/h2&gt;
 
