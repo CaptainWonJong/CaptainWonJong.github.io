@@ -128,8 +128,8 @@
 
 </description>
         <pubDate>Thu, 06 Dec 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018-12-06/FileProvider_-getUriForFile/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-12-06/FileProvider_-getUriForFile/</guid>
+        <link>http://localhost:4000/2018-12-06/FileProvider-getUriForFile/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-12-06/FileProvider-getUriForFile/</guid>
       </item>
     
       <item>
@@ -1304,8 +1304,12 @@ kotlin : &lt;a href=&quot;https://github.com/chintandesai49/SMSRetrieverAPIDemo&
  : 모델을 만들 떄 POJO를 탑재해줌  
 
 9. .gitignore
- : .gitignore 자동 생성(계속 변하는 파일들 무시하는 코드 자동 생성)  
+ : .gitignore 자동 생성(계속 변하는 파일들 무시하는 코드 자동 생성) 
+ 
+10. Lombok Plugin
+ : DTO(Model)의 생성자, Setter, Getter 등을 어노테이션으로 대체  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 </description>
         <pubDate>Thu, 06 Sep 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018-09-06/My-Plugin/</link>
