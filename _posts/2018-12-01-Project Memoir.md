@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Project Mistake Collection"
-description: "프로젝트 개발 실수 모음"
+title: "Project Memoir"
+description: "프로젝트 회고록 (18.12.01 ~ 19.03.31)"
 date: 2018-12-01
-tags: [Android, Mistake]
+tags: [Android, Memoir]
 comments: true
 share: true
 ---
 
-## 프로젝트 개발 실수 모음 (18.12.01 ~ 19.03.31)
+## 프로젝트 개발 회고록 (18.12.01 ~ 19.03.31)
 
-#### 18.12.18
+#### [실수] 18.12.18
 1. 디자인팀에서 준 나인패치 파일을 drawable에 넣었더니 깨짐현상 발생  
 --> drawable 파일이 아닌 drawable-xxhdpi 폴더에 넣으니 정상적으로 동작함  
 **디자인팀에게 제작한 해상도를 물어보고 해상도에 맞게 폴더를 구성해서 넣을것.**   
@@ -19,5 +19,9 @@ share: true
 --> remote 브랜치와 local 브랜치에 대한 개념이 부족하여 발생한 문제로, 잘못된 브랜치는 삭제하거나 다른 브랜치와 merge하여 해결  
 **Git에 대한 개념을 확실히 잡고, 사용방법을 커맨드를 사용하여 공부할 것.**  
 
+#### [정보] 18.12.19
+1. @BindingAdapter는 전체 공통으로 커스텀한 동작을 만들지만, 잘 쓰진 않는다.
+2. Observablefield vs LiveData 비교 한다면 LifeCycle의 관리 유무가 크기 때문에 LiveData를 많이 사용한다.
+3. MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 **추가로 공부가 필요**하다. 
 
   

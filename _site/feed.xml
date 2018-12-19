@@ -176,10 +176,10 @@ Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;
       </item>
     
       <item>
-        <title>Project Mistake Collection</title>
-        <description>&lt;h2 id=&quot;프로젝트-개발-실수-모음-181201--190331&quot;&gt;프로젝트 개발 실수 모음 (18.12.01 ~ 19.03.31)&lt;/h2&gt;
+        <title>Project Memoir</title>
+        <description>&lt;h2 id=&quot;프로젝트-개발-회고록-181201--190331&quot;&gt;프로젝트 개발 회고록 (18.12.01 ~ 19.03.31)&lt;/h2&gt;
 
-&lt;h4 id=&quot;181218&quot;&gt;18.12.18&lt;/h4&gt;
+&lt;h4 id=&quot;실수-181218&quot;&gt;[실수] 18.12.18&lt;/h4&gt;
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;디자인팀에서 준 나인패치 파일을 drawable에 넣었더니 깨짐현상 발생&lt;br /&gt;
@@ -193,10 +193,17 @@ Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;
   &lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;h4 id=&quot;정보-181219&quot;&gt;[정보] 18.12.19&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;@BindingAdapter는 전체 공통으로 커스텀한 동작을 만들지만, 잘 쓰진 않는다.&lt;/li&gt;
+  &lt;li&gt;Observablefield vs LiveData 비교 한다면 LifeCycle의 관리 유무가 크기 때문에 LiveData를 많이 사용한다.&lt;/li&gt;
+  &lt;li&gt;MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 &lt;strong&gt;추가로 공부가 필요&lt;/strong&gt;하다.&lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
         <pubDate>Sat, 01 Dec 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018-12-01/Project-Mistake-Collection/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-12-01/Project-Mistake-Collection/</guid>
+        <link>http://localhost:4000/2018-12-01/Project-Memoir/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-12-01/Project-Memoir/</guid>
       </item>
     
       <item>
