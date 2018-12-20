@@ -24,4 +24,6 @@ share: true
 2. Observablefield vs LiveData 비교 한다면 LifeCycle의 관리 유무가 크기 때문에 LiveData를 많이 사용한다.
 3. MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 **추가로 공부가 필요**하다. 
 
-  
+#### [정보] 18.12.20
+1. 구글은 정말 천재인 것 같다. <https://developer.android.com/jetpack/docs/guide?hl=ko>  
+2. 전역으로 옵저버블한 변수나 객체를 어떻게 처리할 수 있을까?  
