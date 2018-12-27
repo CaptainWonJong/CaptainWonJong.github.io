@@ -6,6 +6,42 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How to delete Android button shadows</title>
+        <description>&lt;h2 id=&quot;안드로이드-버튼-그림자-삭제-방법&quot;&gt;안드로이드 버튼 그림자 삭제 방법&lt;/h2&gt;
+
+&lt;p&gt;연말을 맞아 열심히 프로젝트 1달째에 들어가고 있어 매우 바쁜 와중에 나중에 잊어버리지 않도록 간단한 포스팅을 한다.ㅠㅠ&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Button 속성 추가 방법
+    &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; 
+     &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+     &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;?android:attr/borderlessButtonStyle&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;위 속성을 Button 에 추가 해 주면 된다.&lt;br /&gt;
+그러나 개발중인 앱은 style.xml에 커스텀한 버튼을 만들었기 때문에 아래와 같은 방법을 사용하였다.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;style.xml의 CustomButton에 속성 추가&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MyCustomButton&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;parent=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@android:style/Widget.Button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    ...
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 아래 속성을 추가 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;android:stateListAnimator&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;tools:targetApi=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lollipop&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;@null&lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt; 
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;끝&quot;&gt;끝&lt;/h4&gt;
+
+&lt;p&gt;참고사이트 :&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Dec 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-12-27/Custom-Button-Remove-Shadow/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-12-27/Custom-Button-Remove-Shadow/</guid>
+      </item>
+    
+      <item>
         <title>FileProvider - android.os.FileUriExposedException</title>
         <description>&lt;h2 id=&quot;fileuriexposedexception-이슈-해결방법&quot;&gt;FileUriExposedException 이슈 해결방법&lt;/h2&gt;
 
@@ -200,6 +236,11 @@ Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;
   &lt;li&gt;MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 &lt;strong&gt;추가로 공부가 필요&lt;/strong&gt;하다.&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;h4 id=&quot;정보-181220&quot;&gt;[정보] 18.12.20&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;구글은 정말 천재인 것 같다. &lt;a href=&quot;https://developer.android.com/jetpack/docs/guide?hl=ko&quot;&gt;https://developer.android.com/jetpack/docs/guide?hl=ko&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;전역으로 옵저버블한 변수나 객체를 어떻게 처리할 수 있을까?&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sat, 01 Dec 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018-12-01/Project-Memoir/</link>
