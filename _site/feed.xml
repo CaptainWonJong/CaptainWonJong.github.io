@@ -6,137 +6,6 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Hexa Of Opacity Value</title>
-        <description>&lt;h2 id=&quot;안드로이드-컬러-불투명값-정리-16진수&quot;&gt;안드로이드 컬러 불투명값 %정리 (16진수)&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;100% — FF
-99% — FC
-98% — FA
-97% — F7
-96% — F5
-
-95% — F2
-94% — F0
-93% — ED
-92% — EB
-91% — E8
-
-90% — E6
-89% — E3
-88% — E0
-87% — DE
-86% — DB
-
-85% — D9
-84% — D6
-83% — D4
-82% — D1
-81% — CF
-
-80% — CC
-79% — C9
-78% — C7
-77% — C4
-76% — C2
-
-75% — BF
-74% — BD
-73% — BA
-72% — B8
-71% — B5
-
-70% — B3
-69% — B0
-68% — AD
-67% — AB
-66% — A8
-
-65% — A6
-64% — A3
-63% — A1
-62% — 9E
-61% — 9C
-
-60% — 99
-59% — 96
-58% — 94
-57% — 91
-56% — 8F
-
-55% — 8C
-54% — 8A
-53% — 87
-52% — 85
-51% — 82
-
-50% — 80
-49% — 7D
-48% — 7A
-47% — 78
-46% — 75
-
-45% — 73
-44% — 70
-43% — 6E
-42% — 6B
-41% — 69
-
-40% — 66
-39% — 63
-38% — 61
-37% — 5E
-36% — 5C
-
-35% — 59
-34% — 57
-33% — 54
-32% — 52
-31% — 4F
-
-30% — 4D
-28% — 4A
-28% — 47
-27% — 45
-26% — 42
-
-25% — 40
-24% — 3D
-23% — 3B
-22% — 38
-21% — 36
-
-20% — 33
-19% — 30
-18% — 2E
-17% — 2B
-16% — 29
-
-15% — 26
-14% — 24
-13% — 21
-12% — 1F
-11% — 1C
-
-10% — 1A
-9% — 17
-8% — 14
-7% — 12
-6% — 0F
-5% — 0D
-
-4% — 0A
-3% — 08
-2% — 05
-1% — 03
-0% — 00
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Sun, 06 Jan 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2019-01-06/How-To-Delete-Android-Button-Shadows-%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-01-06/How-To-Delete-Android-Button-Shadows-%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB/</guid>
-      </item>
-    
-      <item>
         <title>How to Delete Android Button Shadows</title>
         <description>&lt;h2 id=&quot;안드로이드-버튼-그림자-삭제-방법&quot;&gt;안드로이드 버튼 그림자 삭제 방법&lt;/h2&gt;
 
@@ -364,8 +233,25 @@ Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;
 &lt;ol&gt;
   &lt;li&gt;@BindingAdapter는 전체 공통으로 커스텀한 동작을 만들지만, 잘 쓰진 않는다.&lt;/li&gt;
   &lt;li&gt;Observablefield vs LiveData 비교 한다면 LifeCycle의 관리 유무가 크기 때문에 LiveData를 많이 사용한다.&lt;/li&gt;
-  &lt;li&gt;MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 &lt;strong&gt;추가로 공부가 필요&lt;/strong&gt;하다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 &lt;strong&gt;추가로 공부가 필요&lt;/strong&gt;하다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;@BindingAdapter 에서 2가지 이상의 파라미터를 필요로 할 때, 아래와 같이 사용한다.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@BindingAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bind:setProfileImage&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;bind:setProfileType&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setProfileImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ImageView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ImageView&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;40dp&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;40dp&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;bind:setProfileImage=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{viewModel.myModel.image}&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;bind:setProfileType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{viewModel.myModel.imageType}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;정보-181220&quot;&gt;[정보] 18.12.20&lt;/h4&gt;
 &lt;ol&gt;
