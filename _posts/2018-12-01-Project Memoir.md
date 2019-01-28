@@ -29,7 +29,7 @@ share: true
 1. 구글은 정말 천재인 것 같다. <https://developer.android.com/jetpack/docs/guide?hl=ko>  
 2. 전역으로 옵저버블한 변수나 객체를 어떻게 처리할 수 있을까?  
 
-   
+
 #### [정보] 19.01.25
 
 1. @BindingAdapter 에서 2가지 이상의 파라미터를 필요로 할 때, 아래와 같이 사용한다.  
@@ -50,3 +50,14 @@ bind:setProfileImage="@{viewModel.myModel.image}"
 bind:setProfileType="@{viewModel.myModel.imageType}"/>
 ```  
 
+#### [정보] 19.01.28
+
+1. git을 사용하다 commit을 잘못 했을 때 되돌리는 방법  
+- 먼저 잘못 commit한 branch로 간다.  
+- 아래 명령어를 실행하면 바로 이전으로 되돌릴 수 있다.  
+```
+git reset HEAD^
+```
+2. HEAD는 무엇일까?
+- 사용자가 commit을 할 때 아래 사진과 같이 이상한 문자열이 있는데, 이것이 commit한 곳을 가르키는 HEAD 주소값(?) 이다.  
+- 자세한 원리는 [여기](https://bit.ly/2B7zPkt)를 참고하자. 아주 자세히 나와있다.  

@@ -262,6 +262,25 @@ Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;
 &lt;span class=&quot;na&quot;&gt;bind:setProfileType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{viewModel.myModel.imageType}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h4 id=&quot;정보-190128&quot;&gt;[정보] 19.01.28&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;git을 사용하다 commit을 잘못 했을 때 되돌리는 방법
+    &lt;ul&gt;
+      &lt;li&gt;먼저 잘못 commit한 branch로 간다.&lt;/li&gt;
+      &lt;li&gt;아래 명령어를 실행하면 바로 이전으로 되돌릴 수 있다.
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset HEAD^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HEAD는 무엇일까?
+    &lt;ul&gt;
+      &lt;li&gt;사용자가 commit을 할 때 아래 사진과 같이 이상한 문자열이 있는데, 이것이 commit한 곳을 가르키는 HEAD 주소값(?) 이다.&lt;/li&gt;
+      &lt;li&gt;자세한 원리는 &lt;a href=&quot;https://bit.ly/2B7zPkt&quot;&gt;여기&lt;/a&gt;를 참고하자. 아주 자세히 나와있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sat, 01 Dec 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018-12-01/Project-Memoir/</link>
