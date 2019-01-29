@@ -276,7 +276,8 @@ Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;
   &lt;/li&gt;
   &lt;li&gt;HEAD는 무엇일까?
     &lt;ul&gt;
-      &lt;li&gt;사용자가 commit을 할 때 아래 사진과 같이 이상한 문자열이 있는데, 이것이 commit한 곳을 가르키는 HEAD 주소값(?) 이다.&lt;/li&gt;
+      &lt;li&gt;사용자가 commit을 할 때 아래 사진과 같이 이상한 문자열이 있는데, 이것이 commit한 곳을 가르키는 HEAD 주소값(?) 이다.&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181201_memoir/img_git_commit.png&quot; alt=&quot;img_git_commit.png&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;자세한 원리는 &lt;a href=&quot;https://bit.ly/2B7zPkt&quot;&gt;여기&lt;/a&gt;를 참고하자. 아주 자세히 나와있다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
