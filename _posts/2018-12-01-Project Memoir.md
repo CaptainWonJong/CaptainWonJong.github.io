@@ -60,5 +60,11 @@ git reset HEAD^
 ```
 2. HEAD는 무엇일까?
 - 사용자가 commit을 할 때 아래 사진과 같이 이상한 문자열이 있는데, 이것이 commit한 곳을 가르키는 HEAD 주소값(?) 이다.  
-![img_git_commit.png](https://captainwonjong.github.io/images/181201_memoir/img_git_commit.png)
+![img_git_commit.png](https://captainwonjong.github.io/images/181201_memoir/img_git_commit.png)  
 - 자세한 원리는 [여기](https://bit.ly/2B7zPkt)를 참고하자. 아주 자세히 나와있다.  
+
+
+#### [느낀점] 19.02.11  
+
+1. 휴가는 길게 갔다오면 후유증이 매우 심하다.
+
