@@ -3,7 +3,7 @@ layout: post
 title: "Android APK Build Analysis"
 description: "안드로이드 apk 빌드 분석"
 date: 2019-02-20
-tags: [Android, Build, Apk]
+tags: [Android, Build, Apk, Dalvik]
 comments: true
 share: true
 ---
