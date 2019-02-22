@@ -18,6 +18,7 @@
 &lt;p&gt;사실 apk파일 안의 .dex 파일이나 .arsc 파일들이 무슨 동작을 하는지에 대해서는 궁금하지도 않았는데, 며칠 전 다른 앱을 디컴파일하다가 문득 궁금해져서 이것저것 구글링하다보니 재밌어서 정리하는 것이다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h4 id=&quot;빌드-프로세스&quot;&gt;빌드 프로세스&lt;/h4&gt;
 &lt;p&gt;안드로이드 개발자 홈페이지와 MIT 에듀에 있는 이미지로 모든 설명을 생략한다.&lt;/p&gt;
 
@@ -26,7 +27,11 @@
 
 &lt;p&gt;&lt;img src=&quot;https://captainwonjong.github.io/images/190220_apk_build/build_2.png&quot; alt=&quot;build_2.png&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://captainwonjong.github.io/images/190220_apk_build/build_3.png&quot; alt=&quot;build_3.png&quot; /&gt;&lt;br /&gt;
-&lt;small&gt;출처 : &lt;a href=&quot;https://stuff.mit.edu/afs/sipb/project/android/docs/tools/building/index.html&quot;&gt;https://stuff.mit.edu/afs/sipb/project/android/docs/tools/building/index.html&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;small&gt;출처 : &lt;a href=&quot;https://stuff.mit.edu/afs/sipb/project/android/docs/tools/building/index.html&quot;&gt;https://stuff.mit.edu/afs/sipb/project/android/docs/tools/building/index.html&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+[참고사항] 위 이미지에서 .apk파일을 jarsigner를 사용하여 사이닝을 한 후 zipalign을 해준다고 하는데,&lt;br /&gt;
+SDK의 apksigner를 사용하면 zipalign 후 apksigner를 하게 된다. (순서가 바뀜)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;apk파일-뜯어보기&quot;&gt;apk파일 뜯어보기&lt;/h4&gt;
 &lt;ol&gt;

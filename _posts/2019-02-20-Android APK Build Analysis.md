@@ -18,7 +18,9 @@ share: true
 
 사실 apk파일 안의 .dex 파일이나 .arsc 파일들이 무슨 동작을 하는지에 대해서는 궁금하지도 않았는데, 며칠 전 다른 앱을 디컴파일하다가 문득 궁금해져서 이것저것 구글링하다보니 재밌어서 정리하는 것이다.  
 
+
 <br>
+
 #### 빌드 프로세스
 안드로이드 개발자 홈페이지와 MIT 에듀에 있는 이미지로 모든 설명을 생략한다.  
 
@@ -27,8 +29,12 @@ share: true
 
 ![build_2.png](https://captainwonjong.github.io/images/190220_apk_build/build_2.png)  
 ![build_3.png](https://captainwonjong.github.io/images/190220_apk_build/build_3.png)  
-<small>출처 : <https://stuff.mit.edu/afs/sipb/project/android/docs/tools/building/index.html></small>
+<small>출처 : <https://stuff.mit.edu/afs/sipb/project/android/docs/tools/building/index.html></small>  
+[참고사항] 위 이미지에서 .apk파일을 jarsigner를 사용하여 사이닝을 한 후 zipalign을 해준다고 하는데,  
+SDK의 apksigner를 사용하면 zipalign 후 apksigner를 하게 된다. (순서가 바뀜)
   
+  
+  <br>
   
 #### apk파일 뜯어보기
 1. <b>classes.dex</b> : dex는 Dalvik EXecutable 의 약자로, java의 class파일이 Dalvik 형태로 변환된 파일이다.  
@@ -49,8 +55,8 @@ apk파일 안의 classes.dex파일로 보통 존재하게 되는데, 디컴파�
 
 <b>How Android resolves resources at runtimes</b> - ```inflater.inflate ()``` 메소드는 컴파일 된 xml 파일을 구문 분석하고 xml 노드를 인스턴스화하여 뷰 계층을 작성한다. 각 XML 노드는 Java 클래스 (예 : LinearLayout.java, RelativeLayout.java)에 의해 인스턴스화 되고, 인스턴스화하기 위해 inflater는 컴파일 된 xml 파일을 구문 분석하고 노드의 모든 속성을 수집하고 AttributeSet 유형의 압축 구조를 만들게 된다. 이 AttributeSet는 클래스 생성자에 전달되게 되고, 클래스 생성자는 AttributeSet의 실행에 대한 책임과 각 속성값을 분석하는 기능을 가지고 있다.
   
-  <br>
   
+  <br>
   
 #### Dalvik VM과 JVM :  
 1. 안드로이드는 JVM을 사용하는 것이 아니다.  
