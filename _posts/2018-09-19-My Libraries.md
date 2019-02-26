@@ -31,6 +31,7 @@ share: true
 2) [DataBinding](https://developer.android.com/topic/libraries/data-binding/?hl=ko)  
 3) [Dagger2](https://github.com/google/dagger)  
 4) [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)  
+5) [Koin](https://github.com/InsertKoinIO/koin)  
 <br><br>
 
 

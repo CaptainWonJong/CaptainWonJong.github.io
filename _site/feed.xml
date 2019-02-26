@@ -1180,6 +1180,7 @@ Tip 2) 위 이미지에서 파란색 화살표가 있는 탭에서 우클릭을 
 2) &lt;a href=&quot;https://developer.android.com/topic/libraries/data-binding/?hl=ko&quot;&gt;DataBinding&lt;/a&gt;&lt;br /&gt;
 3) &lt;a href=&quot;https://github.com/google/dagger&quot;&gt;Dagger2&lt;/a&gt;&lt;br /&gt;
 4) &lt;a href=&quot;https://developer.android.com/topic/libraries/architecture/livedata&quot;&gt;LiveData&lt;/a&gt;&lt;br /&gt;
+5) &lt;a href=&quot;https://github.com/InsertKoinIO/koin&quot;&gt;Koin&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;sqlite-orm-database&quot;&gt;SQLite ORM (DataBase)&lt;/h2&gt;
@@ -2341,6 +2342,8 @@ logs aren’t being read.&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;assertTrue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colorMatcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isDistinguishable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;추천사이트 : &lt;a href=&quot;https://source.android.com/setup/contribute/code-style&quot;&gt;https://source.android.com/setup/contribute/code-style&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Sep 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018-09-06/Android-Coding-Rule/</link>
