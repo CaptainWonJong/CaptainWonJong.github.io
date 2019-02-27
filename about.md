@@ -15,7 +15,21 @@ permalink: /about/
 ## Technical Skills
 - **Program Language** :: Java, Kotlin, Swift
 - **Development Tool** :: Android Studio, XCode
-- **Others** :: Git, Github, Gitlab, Bitbucket, Source Tree, Jira, Confluence, RedMine, SVN, etc...
+- **Others** :: Git, Github, Gitlab, Bitbucket, Source Tree, Jira, Confluence, Redmine, SVN, Slack, 잔디, Zeplin, Cracker9, ProtoPie etc...
+
+## Android Skills
+<small>*Italic* : Sub</small>  
+
+
+- **Dev. Language** :: Java, *Kotlin*  
+- **Dev. Architecture** :: MVC, MVP, MVVM  
+- **Dev. Jetpack** :: DataBinding, LiveData, ViewModel, Navigation, Room  
+- **Dev. Net** :: OkHttp, Retrofit, Volley  
+- **Dev. ORM** :: Room, Lombok  
+- **Dev. Graphic** :: Glide, *Picasso*, Lottie(Animation)    
+- **Dev. Json Parsing** :: Gson  
+- **Dev. DI** :: NONE  
+- **Dev. ReactiveX** :: NONE  
 
 -------
 
