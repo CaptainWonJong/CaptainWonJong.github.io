@@ -29,6 +29,7 @@ permalink: /about/
 - **Dev. Json Parsing** :: Gson  
 - **Dev. DI** :: NONE  
 - **Dev. ReactiveX** :: NONE  
+
 -------
 
 ## Activities (Project)
