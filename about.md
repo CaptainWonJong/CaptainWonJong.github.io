@@ -20,7 +20,6 @@ permalink: /about/
 ## Android Skills
 <small>*Italic* : Sub</small>  
 
-
 - **Dev. Language** :: Java, *Kotlin*  
 - **Dev. Architecture** :: MVC, MVP, MVVM  
 - **Dev. Jetpack** :: DataBinding, LiveData, ViewModel, Navigation, Room  
@@ -30,7 +29,6 @@ permalink: /about/
 - **Dev. Json Parsing** :: Gson  
 - **Dev. DI** :: NONE  
 - **Dev. ReactiveX** :: NONE  
-
 -------
 
 ## Activities (Project)
