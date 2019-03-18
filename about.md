@@ -38,7 +38,6 @@ permalink: /about/
 ### 2018
 - 2018.12.01 - 2019.03.31 :: [KT 패밀리박스](https://play.google.com/store/apps/details?id=com.kt.ollehfamilybox) Android Dev (for 4.0 Project)  
 - 2018.04.23 - Current :: **Android/iOS Secret Project** - This is a secret project and can not be disclosed.  
-- 2018.06.01 - 2018.10.31 :: [KT 멤버십](https://play.google.com/store/apps/details?id=com.olleh.android.oc2&hl=ko) Android Dev (K-Pay project)  
 - 2017.12.18 - 2018.11.30 :: [KT 패밀리박스](https://play.google.com/store/apps/details?id=com.kt.ollehfamilybox) Android Dev (Maintenance)  
 
 ### 2017
