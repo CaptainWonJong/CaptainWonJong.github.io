@@ -2,7 +2,7 @@
 layout: post
 title: "Project Memoir"
 description: "프로젝트 회고록 (18.12.01 ~ 19.03.31)"
-date: 2018-12-01
+date: 2019-03-31
 tags: [Android, Memoir]
 comments: true
 share: true
