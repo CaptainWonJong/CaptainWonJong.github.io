@@ -2,7 +2,7 @@
 layout: post
 title: "Samsung Foldable"
 description: "삼성 폴더블폰 대응하기"
-date: 2019-03-30
+date: 2019-03-22
 tags: [Android, foldable]
 comments: true
 share: true
