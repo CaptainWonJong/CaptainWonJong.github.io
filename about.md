@@ -17,15 +17,14 @@ permalink: /about/
 - **Development Tool** :: Android Studio, XCode
 - **Others** :: Git, Github, Gitlab, Bitbucket, Source Tree, Jira, Confluence, Redmine, SVN, Slack, 잔디, Zeplin, Cracker9, ProtoPie etc...
 
-## Android Skills
-<small>*Italic* : Sub</small>  
+## Android Skills  
 
-- **Dev. Language** :: Java, *Kotlin*  
+- **Dev. Language** :: Java, Kotlin  
 - **Dev. Architecture** :: MVC, MVP, MVVM  
 - **Dev. Jetpack** :: DataBinding, LiveData, ViewModel, Navigation, Room  
 - **Dev. Net** :: OkHttp, Retrofit, Volley  
 - **Dev. ORM** :: Room, Lombok  
-- **Dev. Graphic** :: Glide, *Picasso*, Lottie(Animation)    
+- **Dev. Graphic** :: Glide, Picasso, Lottie(Animation)    
 - **Dev. Json Parsing** :: Gson  
 - **Dev. DI** :: NONE  
 - **Dev. ReactiveX** :: NONE  
