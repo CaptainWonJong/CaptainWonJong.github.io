@@ -6,6 +6,52 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>String substitution with linux</title>
+        <description>&lt;h2 id=&quot;리눅스를-이용한-문자열-치환&quot;&gt;리눅스를 이용한 문자열 치환&lt;/h2&gt;
+
+&lt;p&gt;프로젝트를 마무리하고 KT에서 앱 검증을 위해 버그수정 및 추가 요구사항을 처리하던 도중 큰 문제가 생겼다.&lt;br /&gt;
+바로 같이 개발하시던 분이 TextView의 단위를 dp가 아닌 sp를 사용했던 것이었다.&lt;br /&gt;
+내가 담당하고 있는 앱은 ASIS부터 TextView의 단위를 dp로 하여 OS의 글자크기에 영향을 받지 않도록 하고 있었기 때문이었다.&lt;br /&gt;
+아 sp를 사용하고 있는 layout만 해도 20개가 넘어갈텐데……&lt;br /&gt;
+어떻게 이 레이아웃을 모두 찾아 sp를 dp로 바꾸어 줘야 할까…?&lt;/p&gt;
+
+&lt;h4 id=&quot;고민1&quot;&gt;고민1.&lt;/h4&gt;
+&lt;p&gt;일일이 찾아서 바꿔줘야하나??&lt;br /&gt;
+아니 그것은 매우 멍청한 생각이었다. 당장 생각을 접고 출근하며 다른 방법을 찾아본다.&lt;/p&gt;
+
+&lt;h4 id=&quot;고민2&quot;&gt;고민2.&lt;/h4&gt;
+&lt;p&gt;그럼 어떻게 한번에 바꿀 수 있을것인가??&lt;br /&gt;
+나는 맥을 사용하고 있기 때문에 터미널을 자유롭게 사용할 수 있었다.&lt;br /&gt;
+그러므로 맥의 터미널을 이용하여 유닉스/리눅스 명령어로 한 번에 바꿀 수 있는지 검색해보자! (출근시간이 깁니다. : 약 1시간 20분 정도..).&lt;/p&gt;
+
+&lt;h4 id=&quot;해결-해-보기&quot;&gt;해결 해 보기&lt;/h4&gt;
+&lt;p&gt;1) 먼저 리눅스 명령어를 통해 “sp” 문자열이 얼마나 많은 layout 파일에 들어가있는지 확인해보고 싶었다. 당장 터미널로 들어가 나의 layout 폴더에 들어가서 아래의 명령어를 입력했다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-linux&quot;&gt;find . -name “*.xml” | xargs grep “sp&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) 세상에! 단위의 sp만 나온 것이 아니라, transport 등의 문자열이나 Spinner까지 검색되었다. 검색조건을 “sp&quot;” 로 수정하여 sp뒤에 “까지 있다는 것을 명시해주자.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-linux&quot;&gt;find . -name “*.xml” | xargs grep “sp\&quot;&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) 파일들을 하나하나 살펴보니 다행히도 id에 sp로 끝나는 문자열은 없었다. 드디어 위의 “sp&quot;” 문자열을 “dp&quot;“로 치환할 수 있을 것 같다…!&lt;/p&gt;
+
+&lt;p&gt;4) 아래 명령어를 사용하고 SourceTree를 확인 해 보자. 혹시 잘못 바뀐게 있으면 롤백하고 명령어를 다시 입력해야한다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-linux&quot;&gt;find ./ -name &quot;*.xml&quot; -exec perl -pi -e 's/sp\&quot;/dp\&quot;/g' {} \;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5) 잘 치환된 것을 확인할 수 있었다!!&lt;/p&gt;
+
+&lt;h2 id=&quot;끝&quot;&gt;끝!&lt;/h2&gt;
+</description>
+        <pubDate>Wed, 17 Apr 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019-04-17/String-substitution-with-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-04-17/String-substitution-with-linux/</guid>
+      </item>
+    
+      <item>
         <title>Project Memoir</title>
         <description>&lt;h2 id=&quot;프로젝트-개발-회고록-181201--190331&quot;&gt;프로젝트 개발 회고록 (18.12.01 ~ 19.03.31)&lt;/h2&gt;
 
