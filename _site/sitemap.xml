@@ -18,6 +18,38 @@
     
     
     <url>
+        <loc>http://localhost:4000/2019-03-31/Project-Memoir/</loc>
+        
+        <lastmod>2019-03-31T00:00:00+09:00</lastmod>
+        
+        
+        
+        <changefreq>weekly</changefreq>
+        
+        
+        
+        <priority>1</priority>
+        
+        
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/2019-03-30/Samsung-foldable/</loc>
+        
+        <lastmod>2019-03-30T00:00:00+09:00</lastmod>
+        
+        
+        
+        <changefreq>weekly</changefreq>
+        
+        
+        
+        <priority>1</priority>
+        
+        
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/2019-03-13/Remove-Unused-Resources/</loc>
         
         <lastmod>2019-03-13T00:00:00+09:00</lastmod>
@@ -101,22 +133,6 @@
         <loc>http://localhost:4000/2018-12-03/Android-Gradle-Tip-(2)/</loc>
         
         <lastmod>2018-12-03T00:00:00+09:00</lastmod>
-        
-        
-        
-        <changefreq>weekly</changefreq>
-        
-        
-        
-        <priority>1</priority>
-        
-        
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/2018-12-01/Project-Memoir/</loc>
-        
-        <lastmod>2018-12-01T00:00:00+09:00</lastmod>
         
         
         

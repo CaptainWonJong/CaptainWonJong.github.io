@@ -6,6 +6,106 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Project Memoir</title>
+        <description>&lt;h2 id=&quot;프로젝트-개발-회고록-181201--190331&quot;&gt;프로젝트 개발 회고록 (18.12.01 ~ 19.03.31)&lt;/h2&gt;
+
+&lt;h4 id=&quot;실수-181218&quot;&gt;[실수] 18.12.18&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;디자인팀에서 준 나인패치 파일을 drawable에 넣었더니 깨짐현상 발생&lt;br /&gt;
+–&amp;gt; drawable 파일이 아닌 drawable-xxhdpi 폴더에 넣으니 정상적으로 동작함&lt;br /&gt;
+&lt;strong&gt;디자인팀에게 제작한 해상도를 물어보고 해상도에 맞게 폴더를 구성해서 넣을것.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;git 브랜치 줄기를 잘못 나눠 꼬임현상 발생&lt;br /&gt;
+–&amp;gt; remote 브랜치와 local 브랜치에 대한 개념이 부족하여 발생한 문제로, 잘못된 브랜치는 삭제하거나 다른 브랜치와 merge하여 해결&lt;br /&gt;
+&lt;strong&gt;Git에 대한 개념을 확실히 잡고, 사용방법을 커맨드를 사용하여 공부할 것.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;정보-181219&quot;&gt;[정보] 18.12.19&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;@BindingAdapter는 전체 공통으로 커스텀한 동작을 만들지만, 잘 쓰진 않는다.&lt;/li&gt;
+  &lt;li&gt;Observablefield vs LiveData 비교 한다면 LifeCycle의 관리 유무가 크기 때문에 LiveData를 많이 사용한다.&lt;/li&gt;
+  &lt;li&gt;MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 &lt;strong&gt;추가로 공부가 필요&lt;/strong&gt;하다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;정보-181220&quot;&gt;[정보] 18.12.20&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;구글은 정말 천재인 것 같다. &lt;a href=&quot;https://developer.android.com/jetpack/docs/guide?hl=ko&quot;&gt;https://developer.android.com/jetpack/docs/guide?hl=ko&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;전역으로 옵저버블한 변수나 객체를 어떻게 처리할 수 있을까?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;정보-190125&quot;&gt;[정보] 19.01.25&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;@BindingAdapter 에서 2가지 이상의 파라미터를 필요로 할 때, 아래와 같이 사용한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@BindingAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bind:setProfileImage&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;bind:setProfileType&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setProfileImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ImageView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ImageView&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;40dp&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;40dp&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;bind:setProfileImage=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{viewModel.myModel.image}&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;bind:setProfileType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{viewModel.myModel.imageType}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;정보-190128&quot;&gt;[정보] 19.01.28&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;git을 사용하다 commit을 잘못 했을 때 되돌리는 방법
+    &lt;ul&gt;
+      &lt;li&gt;먼저 잘못 commit한 branch로 간다.&lt;/li&gt;
+      &lt;li&gt;아래 명령어를 실행하면 바로 이전으로 되돌릴 수 있다.
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset HEAD^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HEAD는 무엇일까?
+    &lt;ul&gt;
+      &lt;li&gt;사용자가 commit을 할 때 아래 사진과 같이 이상한 문자열이 있는데, 이것이 commit한 곳을 가르키는 HEAD 주소값(?) 이다.&lt;br /&gt;
+&lt;img src=&quot;https://captainwonjong.github.io/images/181201_memoir/img_git_commit.png&quot; alt=&quot;img_git_commit.png&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;자세한 원리는 &lt;a href=&quot;https://bit.ly/2B7zPkt&quot;&gt;여기&lt;/a&gt;를 참고하자. 아주 자세히 나와있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;느낀점-190211&quot;&gt;[느낀점] 19.02.11&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;휴가는 길게 갔다오면 후유증이 매우 심하다.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sun, 31 Mar 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019-03-31/Project-Memoir/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-31/Project-Memoir/</guid>
+      </item>
+    
+      <item>
+        <title>Samsung Foldable</title>
+        <description>&lt;h2 id=&quot;삼성-폴더블폰-대응하기&quot;&gt;삼성 폴더블폰 대응하기&lt;/h2&gt;
+
+&lt;p&gt;삼성 폴더블폰 Document :&lt;br /&gt;
+&lt;a href=&quot;https://developer.samsung.com/galaxy/foldable/techdocs#&quot;&gt;https://developer.samsung.com/galaxy/foldable/techdocs#&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;테스트 방법 :&lt;br /&gt;
+&lt;a href=&quot;https://developer.samsung.com/galaxy/foldable/test&quot;&gt;https://developer.samsung.com/galaxy/foldable/test&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 30 Mar 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019-03-30/Samsung-foldable/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-30/Samsung-foldable/</guid>
+      </item>
+    
+      <item>
         <title>Remove Unused Resources</title>
         <description>&lt;h2 id=&quot;사용하지-않는-리소스-삭제하기&quot;&gt;사용하지 않는 리소스 삭제하기&lt;/h2&gt;
 
@@ -395,90 +495,6 @@ Android Studio에서 앱 빌드 및 실행에 관한 내용은 &lt;a href=&quot;
         <pubDate>Mon, 03 Dec 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018-12-03/Android-Gradle-Tip-(2)/</link>
         <guid isPermaLink="true">http://localhost:4000/2018-12-03/Android-Gradle-Tip-(2)/</guid>
-      </item>
-    
-      <item>
-        <title>Project Memoir</title>
-        <description>&lt;h2 id=&quot;프로젝트-개발-회고록-181201--190331&quot;&gt;프로젝트 개발 회고록 (18.12.01 ~ 19.03.31)&lt;/h2&gt;
-
-&lt;h4 id=&quot;실수-181218&quot;&gt;[실수] 18.12.18&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;디자인팀에서 준 나인패치 파일을 drawable에 넣었더니 깨짐현상 발생&lt;br /&gt;
-–&amp;gt; drawable 파일이 아닌 drawable-xxhdpi 폴더에 넣으니 정상적으로 동작함&lt;br /&gt;
-&lt;strong&gt;디자인팀에게 제작한 해상도를 물어보고 해상도에 맞게 폴더를 구성해서 넣을것.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;git 브랜치 줄기를 잘못 나눠 꼬임현상 발생&lt;br /&gt;
-–&amp;gt; remote 브랜치와 local 브랜치에 대한 개념이 부족하여 발생한 문제로, 잘못된 브랜치는 삭제하거나 다른 브랜치와 merge하여 해결&lt;br /&gt;
-&lt;strong&gt;Git에 대한 개념을 확실히 잡고, 사용방법을 커맨드를 사용하여 공부할 것.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;정보-181219&quot;&gt;[정보] 18.12.19&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;@BindingAdapter는 전체 공통으로 커스텀한 동작을 만들지만, 잘 쓰진 않는다.&lt;/li&gt;
-  &lt;li&gt;Observablefield vs LiveData 비교 한다면 LifeCycle의 관리 유무가 크기 때문에 LiveData를 많이 사용한다.&lt;/li&gt;
-  &lt;li&gt;MutableLiveData vs ImMutableLiveData 비교 한다면 주로 MutableData를 사용하게 되는데 초기화를 하지 않아도 동작이 잘 된다(?)고 하는데 &lt;strong&gt;추가로 공부가 필요&lt;/strong&gt;하다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;정보-181220&quot;&gt;[정보] 18.12.20&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;구글은 정말 천재인 것 같다. &lt;a href=&quot;https://developer.android.com/jetpack/docs/guide?hl=ko&quot;&gt;https://developer.android.com/jetpack/docs/guide?hl=ko&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;전역으로 옵저버블한 변수나 객체를 어떻게 처리할 수 있을까?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;정보-190125&quot;&gt;[정보] 19.01.25&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;@BindingAdapter 에서 2가지 이상의 파라미터를 필요로 할 때, 아래와 같이 사용한다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@BindingAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bind:setProfileImage&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;bind:setProfileType&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setProfileImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ImageView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imageType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; 
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;ImageView&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;40dp&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;40dp&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;bind:setProfileImage=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{viewModel.myModel.image}&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;bind:setProfileType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{viewModel.myModel.imageType}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;정보-190128&quot;&gt;[정보] 19.01.28&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;git을 사용하다 commit을 잘못 했을 때 되돌리는 방법
-    &lt;ul&gt;
-      &lt;li&gt;먼저 잘못 commit한 branch로 간다.&lt;/li&gt;
-      &lt;li&gt;아래 명령어를 실행하면 바로 이전으로 되돌릴 수 있다.
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset HEAD^
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;HEAD는 무엇일까?
-    &lt;ul&gt;
-      &lt;li&gt;사용자가 commit을 할 때 아래 사진과 같이 이상한 문자열이 있는데, 이것이 commit한 곳을 가르키는 HEAD 주소값(?) 이다.&lt;br /&gt;
-&lt;img src=&quot;https://captainwonjong.github.io/images/181201_memoir/img_git_commit.png&quot; alt=&quot;img_git_commit.png&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;자세한 원리는 &lt;a href=&quot;https://bit.ly/2B7zPkt&quot;&gt;여기&lt;/a&gt;를 참고하자. 아주 자세히 나와있다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;느낀점-190211&quot;&gt;[느낀점] 19.02.11&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;휴가는 길게 갔다오면 후유증이 매우 심하다.&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sat, 01 Dec 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018-12-01/Project-Memoir/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-12-01/Project-Memoir/</guid>
       </item>
     
       <item>
