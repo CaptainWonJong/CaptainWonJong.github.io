@@ -6,7 +6,6 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-<<<<<<< HEAD
         <title>String substitution with linux</title>
         <description>&lt;h2 id=&quot;리눅스를-이용한-문자열-치환&quot;&gt;리눅스를 이용한 문자열 치환&lt;/h2&gt;
 
@@ -53,8 +52,6 @@
       </item>
     
       <item>
-=======
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
         <title>Project Memoir</title>
         <description>&lt;h2 id=&quot;프로젝트-개발-회고록-181201--190331&quot;&gt;프로젝트 개발 회고록 (18.12.01 ~ 19.03.31)&lt;/h2&gt;
 
@@ -132,11 +129,8 @@
   &lt;li&gt;휴가는 길게 갔다오면 후유증이 매우 심하다.&lt;/li&gt;
 &lt;/ol&gt;
 
-<<<<<<< HEAD
 &lt;h4 id=&quot;마무리-190331&quot;&gt;[마무리] 19.03.31&lt;/h4&gt;
 &lt;p&gt;위의 내용들은 프로젝트를 하며 실수한점들을 반복하지 않고, 지식적으로 알게된 것들을 간단하게 적기 위하여 작성하였다.&lt;/p&gt;
-=======
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
 </description>
         <pubDate>Sun, 31 Mar 2019 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2019-03-31/Project-Memoir/</link>
@@ -147,29 +141,6 @@
         <title>Samsung Foldable</title>
         <description>&lt;h2 id=&quot;삼성-폴더블폰-대응하기&quot;&gt;삼성 폴더블폰 대응하기&lt;/h2&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;삼성이 폴더블폰을 공개하며 안드로이드 개발자들은 이제 이에 대응해야 하는 상황이 발생하였다.&lt;/p&gt;
-
-&lt;p&gt;먼저 &lt;a href=&quot;https://developer.samsung.com/galaxy/foldable&quot;&gt;여기&lt;/a&gt; 삼성 개발자사이트에서 폴더플폰에 대응하는 방법이 정리되어있는데, 천천히 알아보자.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://developer.samsung.com/galaxy/foldable&quot;&gt;여기&lt;/a&gt;에서 FoldableEmulator_1.0.1.apk 파일을 다운받는다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;adb에서 위 apk파일을 설치한다.&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ adb install FoldableEmulator.apk
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;끝!&lt;/strong&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 22 Mar 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2019-03-22/Samsung-foldable/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-03-22/Samsung-foldable/</guid>
-=======
 &lt;p&gt;삼성 폴더블폰 Document :&lt;br /&gt;
 &lt;a href=&quot;https://developer.samsung.com/galaxy/foldable/techdocs#&quot;&gt;https://developer.samsung.com/galaxy/foldable/techdocs#&lt;/a&gt;&lt;/p&gt;
 
@@ -177,10 +148,9 @@
 &lt;a href=&quot;https://developer.samsung.com/galaxy/foldable/test&quot;&gt;https://developer.samsung.com/galaxy/foldable/test&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 30 Mar 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2019-03-30/Samsung-foldable/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-03-30/Samsung-foldable/</guid>
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
+        <pubDate>Fri, 22 Mar 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019-03-22/Samsung-foldable/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-22/Samsung-foldable/</guid>
       </item>
     
       <item>

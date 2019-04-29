@@ -18,15 +18,9 @@
     
     
     <url>
-<<<<<<< HEAD
         <loc>http://localhost:4000/2019-04-17/String-substitution-with-linux/</loc>
         
         <lastmod>2019-04-17T00:00:00+09:00</lastmod>
-=======
-        <loc>http://localhost:4000/2019-03-31/Project-Memoir/</loc>
-        
-        <lastmod>2019-03-31T00:00:00+09:00</lastmod>
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
         
         
         
@@ -40,15 +34,9 @@
     </url>
     
     <url>
-<<<<<<< HEAD
         <loc>http://localhost:4000/2019-03-31/Project-Memoir/</loc>
         
         <lastmod>2019-03-31T00:00:00+09:00</lastmod>
-=======
-        <loc>http://localhost:4000/2019-03-30/Samsung-foldable/</loc>
-        
-        <lastmod>2019-03-30T00:00:00+09:00</lastmod>
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
         
         
         
@@ -62,15 +50,25 @@
     </url>
     
     <url>
-<<<<<<< HEAD
         <loc>http://localhost:4000/2019-03-22/Samsung-foldable/</loc>
         
         <lastmod>2019-03-22T00:00:00+09:00</lastmod>
-=======
+        
+        
+        
+        <changefreq>weekly</changefreq>
+        
+        
+        
+        <priority>1</priority>
+        
+        
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/2019-03-13/Remove-Unused-Resources/</loc>
         
         <lastmod>2019-03-13T00:00:00+09:00</lastmod>
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
         
         
         
@@ -84,15 +82,9 @@
     </url>
     
     <url>
-<<<<<<< HEAD
-        <loc>http://localhost:4000/2019-03-13/Remove-Unused-Resources/</loc>
-        
-        <lastmod>2019-03-13T00:00:00+09:00</lastmod>
-=======
         <loc>http://localhost:4000/2019-03-11/Using-HttpClient,-Volley-to-targetSdkVersion-28/</loc>
         
         <lastmod>2019-03-11T00:00:00+09:00</lastmod>
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
         
         
         
@@ -106,29 +98,6 @@
     </url>
     
     <url>
-<<<<<<< HEAD
-        <loc>http://localhost:4000/2019-03-11/Using-HttpClient,-Volley-to-targetSdkVersion-28/</loc>
-        
-        <lastmod>2019-03-11T00:00:00+09:00</lastmod>
-=======
-        <loc>http://localhost:4000/2019-02-20/Android-APK-Build-Analysis/</loc>
-        
-        <lastmod>2019-02-20T00:00:00+09:00</lastmod>
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
-        
-        
-        
-        <changefreq>weekly</changefreq>
-        
-        
-        
-        <priority>1</priority>
-        
-        
-    </url>
-    
-    <url>
-<<<<<<< HEAD
         <loc>http://localhost:4000/2019-02-20/Android-APK-Build-Analysis/</loc>
         
         <lastmod>2019-02-20T00:00:00+09:00</lastmod>
@@ -164,31 +133,6 @@
         <loc>http://localhost:4000/2018-12-06/FileProvider-getUriForFile/</loc>
         
         <lastmod>2018-12-06T00:00:00+09:00</lastmod>
-=======
-        <loc>http://localhost:4000/2018-12-27/How-To-Delete-Android-Button-Shadows/</loc>
-        
-        <lastmod>2018-12-27T00:00:00+09:00</lastmod>
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
-        
-        
-        
-        <changefreq>weekly</changefreq>
-        
-        
-        
-        <priority>1</priority>
-        
-        
-    </url>
-    
-    <url>
-<<<<<<< HEAD
-        <loc>http://localhost:4000/2018-12-03/Android-Gradle-Tip-(2)/</loc>
-        
-=======
-        <loc>http://localhost:4000/2018-12-06/FileProvider-getUriForFile/</loc>
-        
-        <lastmod>2018-12-06T00:00:00+09:00</lastmod>
         
         
         
@@ -204,7 +148,6 @@
     <url>
         <loc>http://localhost:4000/2018-12-03/Android-Gradle-Tip-(2)/</loc>
         
->>>>>>> 4f1e3121d8b252f905561a8e116bc347e9f3a92d
         <lastmod>2018-12-03T00:00:00+09:00</lastmod>
         
         
