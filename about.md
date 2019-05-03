@@ -35,7 +35,7 @@ permalink: /about/
 ### Github
 ![Github Image](https://ghchart.rshah.org/CaptainWonJong)
 ### 2019
-- 2019.01.01 - 2019.05.17 :: [KT 패밀리박스](https://play.google.com/store/apps/details?id=com.kt.ollehfamilybox) Android Dev (Maintenance)  
+- 2019.01.01 - 2019.05.15 :: [KT 패밀리박스](https://play.google.com/store/apps/details?id=com.kt.ollehfamilybox) Android Dev (Maintenance)  
 - 2019.01.01 - 2019.03.31 :: [KT 패밀리박스](https://play.google.com/store/apps/details?id=com.kt.ollehfamilybox) Android Dev (for 4.0 Project)  
 
 ### 2018
