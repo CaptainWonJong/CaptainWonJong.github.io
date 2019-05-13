@@ -22,12 +22,12 @@ permalink: /about/
 - **Dev. Language** :: Java, Kotlin  
 - **Dev. Architecture** :: MVC, MVP, MVVM  
 - **Dev. Jetpack** :: DataBinding, LiveData, ViewModel, Navigation, Room  
-- **Dev. Net** :: OkHttp, Retrofit, Volley  
-- **Dev. ORM** :: Room, Lombok  
+- **Dev. Net** :: OkHttp, Retrofit, Volley, Volleyer  
+- **Dev. DataBase** :: SQLite, Room  
 - **Dev. Graphic** :: Glide, Picasso, Lottie(Animation)    
 - **Dev. Json Parsing** :: Gson  
 - **Dev. DI** :: NONE  
-- **Dev. ReactiveX** :: NONE  
+- **Dev. ReactiveX** :: LiveData  
 
 -------
 
