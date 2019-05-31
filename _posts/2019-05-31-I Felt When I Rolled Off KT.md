@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Felt When I Rolled Off KT"
-description: "KT를 롤오프하며 느낀점"
+description: "KT에서 롤오프하며 느낀점"
 date: 2019-05-31
 tags: [Android, KT]
 comments: true
