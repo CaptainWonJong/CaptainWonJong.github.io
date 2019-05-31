@@ -28,7 +28,9 @@ SM과제를 통해 앱의 안정화 + 추가기능개발을 하고,
 
 (물론 KT 보안에 위배되지 않도록 적을 것이다..ㅎㅎ)
 
-그리고 이 글은 분명 미래의 나에게 좋은 영양제가 될 수 있을 것이다.
+그리고 이 글은 분명 미래의 나에게 좋은 영양제가 될 수 있을 것이다.  
+
+![familybox.jpeg](https://captainwonjong.github.io/images/190531_roll_off_kt/familybox.jpeg)  
 
 
 
@@ -43,11 +45,11 @@ KT에서 일을 하며 내가 가장 크게 얻은 것 중 하나는 사람이�
 그런데 고민이 무색할 정도로 크게 부딪히는 일 없이 비교적 순조롭게 프로젝트가 진행되었다고 생각한다.  
 <small>(물론 트러블이 아예 없지는 않았다.. 크흠..)</small>  
 
-
-![football.jpg](https://captainwonjong.github.io/images/190531_roll_off_kt/football.jpg)  
 같이 일을 하시는 분들께서 내가 부족할 때 많이 도와주셨기 때문이라고 생각하며 항상 감사드리고 있다.  
 
 프로젝트는 결코 혼자서 완성할 수 없기에, KT에서 같이한 모든 사람들과 시간들이 가치있었다.  
+
+![football.jpg](https://captainwonjong.github.io/images/190531_roll_off_kt/football.jpg)  
 
 
 
@@ -61,14 +63,15 @@ KT에서 일을 하며 내가 가장 크게 얻은 것 중 하나는 사람이�
 
 지난 1년 6개월동안 항상 고민하며 일을 했었다. 그리고 고민을 해결하기 위해 당장 할 수 있는 것 부터 시작했다.  
 
-![study.jpg](https://captainwonjong.github.io/images/190531_roll_off_kt/study.jpg)  
 내가 당장 할 수 있는 것은 부족한 실력을 메꾸기 위해 계속 공부하는 것이었고, 너무 감사하게도 공부한 내용을 실무에 적용할 수 있는 기회가 너무 많이 있었다.  
 
 물론 공부할 수 있도록 옆에서 도와주신 분들도 많이 있었다. <small>감사합니다.</small>  
 
 다음 포스팅부터는 내가 공부한 내용들을 실무에 적용한 내용들을 적으려한다. 물론 KT보안에 위배되지 않는 선까지만..  
 
-물론 목표와 고민은 아직도 내 머릿속에 꾸준히 맴돌고 있다.
+물론 목표와 고민은 아직도 내 머릿속에 꾸준히 맴돌고 있다.  
+
+![study.jpg](https://captainwonjong.github.io/images/190531_roll_off_kt/study.jpg)  
 
 
 
