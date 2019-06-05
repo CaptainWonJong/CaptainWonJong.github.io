@@ -21,13 +21,13 @@ permalink: /about/
 
 - **Dev. Language** :: Java, Kotlin  
 - **Dev. Architecture** :: MVC, MVP, MVVM  
-- **Dev. Jetpack** :: DataBinding, LiveData, ViewModel, Navigation, Room  
+- **Dev. Jetpack** :: DataBinding, LiveData, ViewModel, Room  
 - **Dev. Net** :: OkHttp, Retrofit, Volley, Volleyer  
 - **Dev. DataBase** :: SQLite, Room  
 - **Dev. Graphic** :: Glide, Picasso, Lottie(Animation)    
 - **Dev. Json Parsing** :: Gson  
-- **Dev. DI** :: NONE  
-- **Dev. ReactiveX** :: LiveData  
+- **Dev. DI** :: Dagger2  
+- **Dev. ReactiveX** :: RxJava, RxAndroid  
 
 -------
 
