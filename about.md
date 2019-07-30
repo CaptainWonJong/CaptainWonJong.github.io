@@ -29,6 +29,13 @@ permalink: /about/
 - **Dev. DI** :: Dagger2  
 - **Dev. ReactiveX** :: RxJava, RxAndroid  
 
+## iOS Skills  
+
+- **Dev. Language** :: Swift  
+- **Dev. Architecture** :: MVC  
+- **Dev. Net** :: Alamofire  
+- **Dev. Json Parsing** :: SwiftyJSON  
+
 -------
 
 ## Activities (Project)
