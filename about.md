@@ -10,7 +10,7 @@ permalink: /about/
 - Working in [SQI SOFT](http://www.sqisoft.com) (2017.09.04 ~ 2019.09.16)
 
 ## Links
-- Email : leewonjong@sqisoft.com
+- Email : CaptainWonJong@gmail.com
 - [Github](https://github.com/CaptainWonJong)
 
 ## Technical Skills
