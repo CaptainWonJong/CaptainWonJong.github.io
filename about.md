@@ -27,7 +27,7 @@ permalink: /about/
 - **Dev. DataBase** :: SQLite, Room  
 - **Dev. Graphic** :: Glide, Picasso, Lottie(Animation)    
 - **Dev. Json Parsing** :: Gson  
-- **Dev. DI** :: Dagger2  
+- **Dev. DI** :: Dagger2, Koin  
 - **Dev. ReactiveX** :: RxJava, RxAndroid  
 
 ## iOS Skills  

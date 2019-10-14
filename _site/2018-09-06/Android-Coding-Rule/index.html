@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
 
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for CaptainWonJong" href="/feed.xml" />
-  <!-- Begin Jekyll SEO tag v2.6.0 -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Android Coding Rule | CaptainWonJong</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Android Coding Rule" />
@@ -103,10 +103,10 @@ ga('send', 'pageview');
 
 <p>코드를 짜다 보면 때로는 아래의 예처럼 익셉션을 완전히 무시하고 싶어질 때가 있을 것이다.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">try</span> <span class="o">{</span>
-<span class="n">serverPort</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
-<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span> <span class="o">}</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span> <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
 
@@ -127,8 +127,8 @@ ga('send', 'pageview');
   <li>익셉션을 해당 메소드의 콜러(caller)에 발생시킨다.</li>
 </ul>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">NumberFormatException</span> <span class="o">{</span>
-<span class="n">serverPort</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">NumberFormatException</span> <span class="o">{</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
 <span class="o">}</span>
 </code></pre></div></div>
 
@@ -136,10 +136,10 @@ ga('send', 'pageview');
   <li>추상(abstraction) 정도에 맞는 새로운 익셉션을 발생시킨다.</li>
 </ul>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">ConfigurationException</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">ConfigurationException</span> <span class="o">{</span>
 <span class="k">try</span> <span class="o">{</span>
-<span class="n">serverPort</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
-<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">throw</span> <span class="k">new</span> <span class="nf">ConfigurationException</span><span class="o">(</span><span class="s">"Port "</span> <span class="o">+</span> <span class="n">value</span> <span class="o">+</span> <span class="s">" is not valid."</span><span class="o">);</span>
 <span class="o">}</span>
 <span class="o">}</span>
@@ -151,10 +151,10 @@ ga('send', 'pageview');
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/** Set port. If value is not a valid number, 80 is substituted. */</span>
 
-<span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+<span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">try</span> <span class="o">{</span>
-<span class="n">serverPort</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
-<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="n">serverPort</span> <span class="o">=</span> <span class="mi">80</span><span class="o">;</span>  <span class="c1">// default port for server </span>
 <span class="o">}</span>
 <span class="o">}</span>
@@ -167,10 +167,10 @@ ga('send', 'pageview');
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/** Set port. If value is not a valid number, die. */</span>
 
-<span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+<span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">try</span> <span class="o">{</span>
-<span class="n">serverPort</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
-<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="s">"port "</span> <span class="o">+</span> <span class="n">value</span> <span class="s">" is invalid, "</span><span class="o">,</span> <span class="n">e</span><span class="o">);</span>
 <span class="o">}</span>
 <span class="o">}</span>
@@ -184,10 +184,10 @@ ga('send', 'pageview');
 </ul>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/** If value is not a valid number, original port number is used. */</span>
-<span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+<span class="kt">void</span> <span class="nf">setServerPort</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">try</span> <span class="o">{</span>
-<span class="n">serverPort</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
-<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">serverPort</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">NumberFormatException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="c1">// Method is documented to just ignore invalid user input.</span>
 <span class="c1">// serverPort will just be unchanged.</span>
 <span class="o">}</span>
@@ -203,7 +203,7 @@ ga('send', 'pageview');
 <span class="n">someComplicatedParsingFunction</span><span class="o">();</span>   <span class="c1">// may throw ParsingException </span>
 <span class="n">someComplicatedSecurityFunction</span><span class="o">();</span>  <span class="c1">// may throw SecurityException </span>
 <span class="c1">// phew, made it all the way </span>
-<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>                 <span class="c1">// I'll just catch all exceptions </span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>                 <span class="c1">// I'll just catch all exceptions </span>
 <span class="n">handleError</span><span class="o">();</span>                      <span class="c1">// with one generic handler!</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -372,28 +372,28 @@ API의 일부가 되는 퍼블릭 메소드의 경우는 당연히 자바독을 
 사용되어야 한다면 해당 변수는 트라이 블록 이전에 초기화 없이 선언될 수 있다.</p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Instantiate class cl, which represents some sort of Set </span>
-<span class="n">Set</span> <span class="n">s</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="nc">Set</span> <span class="n">s</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
 <span class="k">try</span> <span class="o">{</span>
-<span class="n">s</span> <span class="o">=</span> <span class="o">(</span><span class="n">Set</span><span class="o">)</span> <span class="n">cl</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
-<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">IllegalAccessException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">s</span> <span class="o">=</span> <span class="o">(</span><span class="nc">Set</span><span class="o">)</span> <span class="n">cl</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="nc">IllegalAccessException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">throw</span> <span class="k">new</span> <span class="nf">IllegalArgumentException</span><span class="o">(</span><span class="n">cl</span> <span class="o">+</span> <span class="s">" not accessible"</span><span class="o">);</span>
-<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">InstantiationException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="nc">InstantiationException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">throw</span> <span class="k">new</span> <span class="nf">IllegalArgumentException</span><span class="o">(</span><span class="n">cl</span> <span class="o">+</span> <span class="s">" not instantiable"</span><span class="o">);</span>
 <span class="o">}</span>
 
 <span class="c1">// Exercise the set </span>
-<span class="n">s</span><span class="o">.</span><span class="na">addAll</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">args</span><span class="o">));</span>
+<span class="n">s</span><span class="o">.</span><span class="na">addAll</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">args</span><span class="o">));</span>
 </code></pre></div></div>
 
 <p>하지만 이런 경우에도 트라이-캐치 블록 자체를 메소드에 인캡슐레이션함으로써 변수를 미리 선언하는 것을 피할 수 있다.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Set</span> <span class="nf">createSet</span><span class="o">(</span><span class="n">Class</span> <span class="n">cl</span><span class="o">)</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Set</span> <span class="nf">createSet</span><span class="o">(</span><span class="nc">Class</span> <span class="n">cl</span><span class="o">)</span> <span class="o">{</span>
 <span class="c1">// Instantiate class cl, which represents some sort of Set </span>
 <span class="k">try</span> <span class="o">{</span>
-<span class="k">return</span> <span class="o">(</span><span class="n">Set</span><span class="o">)</span> <span class="n">cl</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
-<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">IllegalAccessException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="k">return</span> <span class="o">(</span><span class="nc">Set</span><span class="o">)</span> <span class="n">cl</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="nc">IllegalAccessException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">throw</span> <span class="k">new</span> <span class="nf">IllegalArgumentException</span><span class="o">(</span><span class="n">cl</span> <span class="o">+</span> <span class="s">" not accessible"</span><span class="o">);</span>
-<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">InstantiationException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="nc">InstantiationException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
 <span class="k">throw</span> <span class="k">new</span> <span class="nf">IllegalArgumentException</span><span class="o">(</span><span class="n">cl</span> <span class="o">+</span> <span class="s">" not instantiable"</span><span class="o">);</span>
 <span class="o">}</span>
 <span class="o">}</span>
@@ -401,8 +401,8 @@ API의 일부가 되는 퍼블릭 메소드의 경우는 당연히 자바독을 
 <span class="o">...</span>
 
 <span class="c1">// Exercise the set </span>
-<span class="n">Set</span> <span class="n">s</span> <span class="o">=</span> <span class="n">createSet</span><span class="o">(</span><span class="n">cl</span><span class="o">);</span>
-<span class="n">s</span><span class="o">.</span><span class="na">addAll</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">args</span><span class="o">));</span>
+<span class="nc">Set</span> <span class="n">s</span> <span class="o">=</span> <span class="n">createSet</span><span class="o">(</span><span class="n">cl</span><span class="o">);</span>
+<span class="n">s</span><span class="o">.</span><span class="na">addAll</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">args</span><span class="o">));</span>
 </code></pre></div></div>
 
 <p>반복문에 사용되는 변수는 꼭 그러지 말아야 할 이유가 없는 한 반복문 내부에서 선언되어야 한다.</p>
@@ -414,7 +414,7 @@ API의 일부가 되는 퍼블릭 메소드의 경우는 당연히 자바독을 
 
 <p>같은 예다.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="o">(</span><span class="n">Iterator</span> <span class="n">i</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span> <span class="n">i</span><span class="o">.</span><span class="na">hasNext</span><span class="o">();</span> <span class="o">)</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="o">(</span><span class="nc">Iterator</span> <span class="n">i</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span> <span class="n">i</span><span class="o">.</span><span class="na">hasNext</span><span class="o">();</span> <span class="o">)</span> <span class="o">{</span>
 <span class="n">doSomethingElse</span><span class="o">(</span><span class="n">i</span><span class="o">.</span><span class="na">next</span><span class="o">());</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -481,13 +481,13 @@ API의 일부가 되는 퍼블릭 메소드의 경우는 당연히 자바독을 
 
 <p>함수 호출이나 값을 할당할 때 등에 줄바꿈을 할 때는 8개의 스페이스를 사용한다. 아래는 올바른 사용 예다.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Instrument</span> <span class="n">i</span> <span class="o">=</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Instrument</span> <span class="n">i</span> <span class="o">=</span>
 <span class="n">someLongExpression</span><span class="o">(</span><span class="n">that</span><span class="o">,</span> <span class="n">wouldNotFit</span><span class="o">,</span> <span class="n">on</span><span class="o">,</span> <span class="n">one</span><span class="o">,</span> <span class="n">line</span><span class="o">);</span>
 </code></pre></div></div>
 
 <p>그리고 아래는 잘못된 예다.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Instrument</span> <span class="n">i</span> <span class="o">=</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Instrument</span> <span class="n">i</span> <span class="o">=</span>
 <span class="n">someLongExpression</span><span class="o">(</span><span class="n">that</span><span class="o">,</span> <span class="n">wouldNotFit</span><span class="o">,</span> <span class="n">on</span><span class="o">,</span> <span class="n">one</span><span class="o">,</span> <span class="n">line</span><span class="o">);</span>
 </code></pre></div></div>
 
@@ -511,9 +511,9 @@ API의 일부가 되는 퍼블릭 메소드의 경우는 당연히 자바독을 
 <p>예:</p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">SOME_CONSTANT</span> <span class="o">=</span> <span class="mi">42</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="no">SOME_CONSTANT</span> <span class="o">=</span> <span class="mi">42</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kt">int</span> <span class="n">publicField</span><span class="o">;</span>
-<span class="kd">private</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="n">sSingleton</span><span class="o">;</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="nc">MyClass</span> <span class="n">sSingleton</span><span class="o">;</span>
 <span class="kt">int</span> <span class="n">mPackagePrivate</span><span class="o">;</span>
 <span class="kd">private</span> <span class="kt">int</span> <span class="n">mPrivate</span><span class="o">;</span>
 <span class="kd">protected</span> <span class="kt">int</span> <span class="n">mProtected</span><span class="o">;</span>
@@ -599,7 +599,7 @@ This also simplifies tool writing.</p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// TODO: The third-party class com.third.useful.Utility.rotate() needs generics </span>
 <span class="nd">@SuppressWarnings</span><span class="o">(</span><span class="s">"generic-cast"</span><span class="o">)</span>
-<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">blix</span> <span class="o">=</span> <span class="n">Utility</span><span class="o">.</span><span class="na">rotate</span><span class="o">(</span><span class="n">blax</span><span class="o">);</span>
+<span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">blix</span> <span class="o">=</span> <span class="nc">Utility</span><span class="o">.</span><span class="na">rotate</span><span class="o">(</span><span class="n">blax</span><span class="o">);</span>
 </code></pre></div></div>
 
 <p>@SuppressWarnings 주석이 들어가야 하는 경우엔, 주석이 적용되는 범위의 코드는 리팩토링(refactoring)되어야 한다.</p>
@@ -797,9 +797,9 @@ logs aren’t being read.</p>
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">testMethod_specificCase1</span> <span class="n">testMethod_specificCase2</span>
 
 <span class="kt">void</span> <span class="nf">testIsDistinguishable_protanopia</span><span class="o">()</span> <span class="o">{</span>
-<span class="n">ColorMatcher</span> <span class="n">colorMatcher</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ColorMatcher</span><span class="o">(</span><span class="n">PROTANOPIA</span><span class="o">)</span>
-<span class="n">assertFalse</span><span class="o">(</span><span class="n">colorMatcher</span><span class="o">.</span><span class="na">isDistinguishable</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">RED</span><span class="o">,</span> <span class="n">Color</span><span class="o">.</span><span class="na">BLACK</span><span class="o">))</span>
-<span class="n">assertTrue</span><span class="o">(</span><span class="n">colorMatcher</span><span class="o">.</span><span class="na">isDistinguishable</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">X</span><span class="o">,</span> <span class="n">Color</span><span class="o">.</span><span class="na">Y</span><span class="o">))</span>
+<span class="nc">ColorMatcher</span> <span class="n">colorMatcher</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ColorMatcher</span><span class="o">(</span><span class="no">PROTANOPIA</span><span class="o">)</span>
+<span class="n">assertFalse</span><span class="o">(</span><span class="n">colorMatcher</span><span class="o">.</span><span class="na">isDistinguishable</span><span class="o">(</span><span class="nc">Color</span><span class="o">.</span><span class="na">RED</span><span class="o">,</span> <span class="nc">Color</span><span class="o">.</span><span class="na">BLACK</span><span class="o">))</span>
+<span class="n">assertTrue</span><span class="o">(</span><span class="n">colorMatcher</span><span class="o">.</span><span class="na">isDistinguishable</span><span class="o">(</span><span class="nc">Color</span><span class="o">.</span><span class="na">X</span><span class="o">,</span> <span class="nc">Color</span><span class="o">.</span><span class="na">Y</span><span class="o">))</span>
 <span class="o">}</span>
 </code></pre></div></div>
 
