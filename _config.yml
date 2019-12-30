@@ -4,10 +4,10 @@ name:               "CaptainWonJong"
 
 author:
   github:           CaptainWonJong
-  email:            leewonjong@sqisoft.com
+  email:            CaptainWonJong@gmail.com
 
 copyright:
-  year:             2018
+  year:             2020
   name:             CaptainWonJong
 
 # Google-analytics
@@ -69,7 +69,7 @@ defaults:
     values:
       layout:       "post"
 
-# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/2.6.1
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
