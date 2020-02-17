@@ -6,8 +6,8 @@ permalink: /about/
 ## WonJong Lee [CaptainWonJong]
 - Seoul. South Korea.
 - Jr. **Android(, iOS)** Developer
-- **Freelancer** (2019.10.15 ~ )
-- Working in [SQI SOFT](http://www.sqisoft.com) (2017.09.04 ~ 2019.09.16)
+- **Freelancer** in innost, Howlab (2019.10.15 ~ )
+- Worked in [SQI SOFT](http://www.sqisoft.com) (2017.09.04 ~ 2019.09.16)
 
 ## Links
 - Email : CaptainWonJong@gmail.com
